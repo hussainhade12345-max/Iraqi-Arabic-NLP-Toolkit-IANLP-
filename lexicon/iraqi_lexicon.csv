@@ -1,4 +1,5 @@
-id,word,msa_equivalent,english_translation,pos,example
+id, word, msa_equivalent, english_translation, 
+pos, governorate, register, source, example
 1,لعد,إذن / إقحام,then / so,Adv,لعد وين چنت؟
 2,فدوه,فداء / تضحية,dear / sacrifice,Noun,فدوه لعينك
 3,شلونك,كيف حالك,how are you,Phrase,شلونك اليوم؟
