@@ -1,11 +1,31 @@
-id, word, msa_equivalent, english_translation, pos, governorate, register, source, example
-1,لعد,إذن / إقحام,then / so,Adv,لعد وين چنت؟
-2,فدوه,فداء / تضحية,dear / sacrifice,Noun,فدوه لعينك
-3,شلونك,كيف حالك,how are you,Phrase,شلونك اليوم؟
-4,هسه,الآن,now,Adv,هسه راح أطلع.
-5,چفيان,تجنب / وقاية,avoiding / warding off,Noun,چفيان شر
-6,يخبل,يجنن / رائع جدا,amazing / stunning,Adj,هذا الشغل يخبل.
-7,كوما,كثيرا / كومة,a lot / heap,Adv,عندي كوما شغل.
-8,سالفة,قصة / موضوع,story / issue,Noun,شنو السالفة؟
-9,باوع,انظر,look,Verb,باوع على الشاشة.
-10,خوش,جيد / ممتاز,good / fine,Adj,هذا خوش ولد.
+id,word,msa_equivalent,english_translation,pos,governorate,register,source,example
+1,لعد,إذن / إقحام,then / so,Adv,Central_Iraq,Colloquial,Lexicon_Project,لعد وين چنت؟
+2,فدوه,فداء / تضحية,dear / sacrifice,Noun,All_Regions,Colloquial,Lexicon_Project,فدوه لعينك
+3,شلونك,كيف حالك,how are you,Phrase,All_Regions,Colloquial,Lexicon_Project,شلونك اليوم؟
+4,هسه,الآن,now,Adv,Central_and_South,Colloquial,Lexicon_Project,هسه راح أطلع
+5,چفيان,تجنب / وقاية,avoiding / warding off,Noun,Southern_Iraq,Colloquial,Lexicon_Project,چفيان شر
+6,يخبل,يجنن / رائع جدا,amazing / stunning,Adj,All_Regions,Colloquial,Lexicon_Project,هذا الشغل يخبل
+7,كوما,كثيرا / كومة,a lot / heap,Adv,All_Regions,Colloquial,Lexicon_Project,عندي كوما شغل
+8,سالفة,قصة / موضوع,story / issue,Noun,All_Regions,Colloquial,Lexicon_Project,شنو السالفة؟
+9,باوع,انظر,look,Verb,Central_and_South,Colloquial,Lexicon_Project,باوع على الشاشة
+10,خوش,جيد / ممتاز,good / fine,Adj,All_Regions,Colloquial,Lexicon_Project,هذا خوش ولد
+11,عسما,أعسر / يستخدم اليد اليسرى,left-handed,Adj,All_Regions,Colloquial,Lexicon_Project,هو ولد عسما
+12,جا,إذن / أداة ربط,then / so,Adv,Southern_Iraq,Colloquial,Lexicon_Project,جا شفت شلون صار؟
+13,كلاش,حذاء تقليدي خفيف,traditional shoes,Noun,Northern_and_Kurdistan,Colloquial,Lexicon_Project,اشترى كلاش جديد
+14,مبين,ظاهر / واضح,apparent / obvious,Adj,All_Regions,Colloquial,Lexicon_Project,مبين عليك التعب اليوم
+15,فاهي,بلا طعم / عديم الحيوية,bland / tasteless,Adj,All_Regions,Colloquial,Lexicon_Project,الأكل فاهي ومابيه ملح
+16,لوگي,تملق / منافق,flatterer / sycophant,Adj,All_Regions,Slang,Lexicon_Project,ابتعد عن الشخص اللوگي
+17,وينك,أين أنت,where are you,Phrase,All_Regions,Colloquial,Lexicon_Project,وينك ما جيت البارحة؟
+18,قشمر,خدع / ضلل,deceived / fooled,Verb,All_Regions,Colloquial,Lexicon_Project,قشمر عليه بالحجي
+19,ميز,طاولة,table,Noun,All_Regions,Colloquial,Lexicon_Project,الكتب فوگ الميز
+20,بلكت,لعله / عسى,hopefully / maybe,Adv,All_Regions,Colloquial,Lexicon_Project,بلكت باكر يجي الفرج
+21,أدبز,قليل الأدب,rude / impolite,Adj,Central_and_South,Colloquial,Lexicon_Project,تصرف أدبز ومو حلو
+22,عبالي,ظننت / اعتقدت,I thought,Verb,All_Regions,Colloquial,Lexicon_Project,عبالي أنت رحت لجامعتك
+23,جرباية,سرير,bed,Noun,All_Regions,Colloquial,Lexicon_Project,الطفل نايم على الجرباية
+24,دشداشة,ثوب تقليدي,traditional robe,Noun,All_Regions,Colloquial,Lexicon_Project,لبس الدشداشة بالعيد
+25,حيل,كثيراً / بقوة,very much / strength,Adv,All_Regions,Colloquial,Lexicon_Project,تعبت حيل من المشي
+26,صوبة,مدفأة,heater,Noun,All_Regions,Colloquial,Lexicon_Project,شغل الصوبة الدنيا باردة
+27,كلش,جداً,very,Adv,All_Regions,Colloquial,Lexicon_Project,هذا الامتحان كلش سهل
+28,سختچي,كسول / متهرب,slacker / lazy,Adj,All_Regions,Slang,Lexicon_Project,عوف السختچية واقرا
+29,روزنامة,تقويم,calendar,Noun,All_Regions,Colloquial,Lexicon_Project,باوع على الروزنامة وشوف التاريخ
+30,ياخه,ياقة القميص,collar,Noun,All_Regions,Colloquial,Lexicon_Project,ياخه القميص وسخة
