@@ -79,3 +79,582 @@ id,word,msa_equivalent,english_translation,pos,governorate,register,source,examp
 58,چرباية,سرير,bed,Noun,All_Regions,Colloquial,Lexicon_Project,نام على الترباية وارتاح
 59,بانزين,وقود سيارات,gasoline,Noun,All_Regions,Colloquial,Lexicon_Project,ترست السيارة بانزين
 60,تاير,إطار سيارة,tire,Noun,All_Regions,Colloquial,Lexicon_Project,تاير السيارة بنشر بالطريق
+161,شغلة,عمل / وظيفة / أمر,job / matter / thing,Noun,All_Regions,Colloquial,Lexicon_Project,عندي شغلة لازم اخلصها
+162,سالفة,قصة / موضوع,story / issue,Noun,All_Regions,Colloquial,Lexicon_Project,شنو سالفتك اليوم؟
+163,خوش,جيد / ممتاز,good / fine,Adj,All_Regions,Colloquial,Lexicon_Project,هذا خوش كتاب
+164,صوبة,مدفأة,heater,Noun,All_Regions,Colloquial,Lexicon_Project,الدنيا باردة شغل الصوبة
+165,تمن,أرز,rice,Noun,All_Regions,Colloquial,Lexicon_Project,اليوم طبخنا تمن ومرگة
+166,مرگة,مرق,stew,Noun,All_Regions,Colloquial,Lexicon_Project,مرگة بامية طيبة كلش
+167,كلش,جداً,very,Adv,All_Regions,Colloquial,Lexicon_Project,هذا الولد كلش عاقل
+168,هواية,كثيراً,a lot / much,Adv,All_Regions,Colloquial,Lexicon_Project,عندي هواية أصدقاء بالكلية
+169,شوية,قليلاً,a little,Adv,All_Regions,Colloquial,Lexicon_Project,ارتاح شوية وبعدين كمل
+170,هسه,الآن,now,Adv,All_Regions,Colloquial,Lexicon_Project,هسه لازم نطلع سريع
+171,باجر,غداً,tomorrow,Adv,All_Regions,Colloquial,Lexicon_Project,باجر عندي دوام بالجامعة
+172,بارحة,أمس,yesterday,Adv,All_Regions,Colloquial,Lexicon_Project,البارحة جان الجو كلش حار
+173,عوف,اترك,leave,Verb,All_Regions,Colloquial,Lexicon_Project,عوف القلم واكتب بعدين
+174,باوع,انظر,look,Verb,Central_and_South,Colloquial,Lexicon_Project,باوع على السبورة زين
+175,شلونك,كيف حالك,how are you,Phrase,All_Regions,Colloquial,Lexicon_Project,شلونك صديقي شخبارك؟
+176,لعد,إذن / إقحام,then / so,Adv,Central_Iraq,Colloquial,Lexicon_Project,لعد ليش ما جيت ويا السايق؟
+177,فدوه,فداء / تضحية,dear / sacrifice,Noun,All_Regions,Colloquial,Lexicon_Project,فدوه لعينك ما قصرت
+178,چفيان,تجنب / وقاية,avoiding / warding off,Noun,Southern_Iraq,Colloquial,Lexicon_Project,طلعنا من المأزق چفيان شر
+179,يخبل,يجنن / رائع جدا,amazing / stunning,Adj,All_Regions,Colloquial,Lexicon_Project,هذا الخط العراقي يخبل
+180,كوما,كثيرا / كومة,a lot / heap,Adv,All_Regions,Colloquial,Lexicon_Project,عندي كوما واجبات لازم اكتبها
+181,بلكت,لعله / عسى,hopefully / maybe,Adv,All_Regions,Colloquial,Lexicon_Project,بلكت يجي الدكتور من وقت
+182,أدبز,قليل الأدب,rude / impolite,Adj,Central_and_South,Colloquial,Lexicon_Project,هذا تصرف أدبز ومو مقبول
+183,عبالي,ظننت / اعتقدت,I thought,Verb,All_Regions,Colloquial,Lexicon_Project,عبالي الامتحان الاسبوع الجاي
+184,جرباية,سرير,bed,Noun,All_Regions,Colloquial,Lexicon_Project,نام على الجرباية حتى ترتاح
+185,دشداشة,ثوب تقليدي,traditional robe,Noun,All_Regions,Colloquial,Lexicon_Project,لبس الدشداشة البيضاء بالجمعة
+186,حيل,كثيراً / بقوة,very much / strength,Adv,All_Regions,Colloquial,Lexicon_Project,تعبت حيل من طريق السفر
+187,سختچي,كسول / متهرب,slacker / lazy,Adj,All_Regions,Slang,Lexicon_Project,ابتعد عن الطالب السختچي
+188,روزنامة,تقويم,calendar,Noun,All_Regions,Colloquial,Lexicon_Project,شوف الروزنامة شوكت العطلة
+189,ياخه,ياقة القميص,collar,Noun,All_Regions,Colloquial,Lexicon_Project,ياخه القميص مالتك واكفة زين
+190,أكو,يوجد,there is,Verb,All_Regions,Colloquial,Lexicon_Project,أكو مكتبة قريبة من القسم؟
+191,ماكو,لا يوجد,there is not,Verb,All_Regions,Colloquial,Lexicon_Project,ماكو أي تأخير بالمحاضرة
+192,بعدين,فيما بعد,later,Adv,All_Regions,Colloquial,Lexicon_Project,نكمل الحجي مالتنا بعدين
+193,عوز,نقص / حاجة,lack / need,Noun,All_Regions,Colloquial,Lexicon_Project,ما عوزنا إلا ضياع الوقت
+194,قندرة,حذاء,shoe,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت قندرة جديدة سوداء
+195,خاتون,سيدة محترمة,lady,Noun,Central_Iraq,Colloquial,Lexicon_Project,الخاتون رتبت غرفتها
+196,زقنبوت,سم / طعام بكراهية,poison / bitter food,Noun,All_Regions,Slang,Lexicon_Project,صاح عليه وقاله زقنبوت
+197,طربكة,فوضى / ركض الخيل,chaos / galloping,Noun,All_Regions,Colloquial,Lexicon_Project,شنو هاي الطربكة بنص الليل؟
+198,جقلمبة,شقلبة,somersault,Noun,All_Regions,Colloquial,Lexicon_Project,وقع من الدرج وسوى جقلمبة
+199,إيدام,مرق / غموس,stew / broth,Noun,Southern_Iraq,Colloquial,Lexicon_Project,مرگة الفاصوليا هي إيدام اليوم
+200,صخام,رماد / مصيبة,soot / disaster,Noun,All_Regions,Colloquial,Lexicon_Project,شلون صخام هذا الموقف
+201,دوشق,فراش النوم,mattress,Noun,All_Regions,Colloquial,Lexicon_Project,الدوشق مالتنا كلش مريح وناعم
+202,بطران,مترف لا مبالي,carefree / spoiled,Adj,All_Regions,Colloquial,Lexicon_Project,تحجي باللعب وأنت بطران
+203,عركات,مشاجرات,fights,Noun,All_Regions,Colloquial,Lexicon_Project,ما أحب العركات والمشاكل بالشارع
+204,طش,انتشر,spread,Verb,All_Regions,Colloquial,Lexicon_Project,الخبر طش بكل الكليات
+205,سربت,تسكع / تهرب,slacked / wandered,Verb,All_Regions,Slang,Lexicon_Project,الولد عاف الدرس وراح يسربت
+206,مبهذل,غير مرتب,messy / untidy,Adj,All_Regions,Colloquial,Lexicon_Project,شكل الدفتر مبهذل وما منظم
+207,زنجيل,سلسلة,chain,Noun,All_Regions,Colloquial,Lexicon_Project,ربط البايسكل بالزنجيل
+208,قبان,ميزان كبير,scale,Noun,All_Regions,Colloquial,Lexicon_Project,وزنوا أكياس التمن بالقبان
+209,إشدايور,ماذا يدور / ماذا يفعل,what is happening,Phrase,Northern_Iraq,Colloquial,Lexicon_Project,إشدايور عندك بهاي الغرفة؟
+210,بنگج,تخدير,anesthesia,Noun,All_Regions,Colloquial,Lexicon_Project,انطاه بنگج موضعي بالأسنان
+211,شاكوش,مطرقة,hammer,Noun,All_Regions,Colloquial,Lexicon_Project,وين الشاكوش حتى اعدل المسمار؟
+212,جام,زجاج,glass,Noun,All_Regions,Colloquial,Lexicon_Project,جام شباك الصالة مكسور
+213,بانزين,وقود سيارات,gasoline,Noun,All_Regions,Colloquial,Lexicon_Project,تأخرنا لأن خط البانزين طويل
+214,تاير,إطار سيارة,tire,Noun,All_Regions,Colloquial,Lexicon_Project,بدلت تاير السيارة البنشر
+215,هيج,هكذا,like this,Adv,All_Regions,Colloquial,Lexicon_Project,الحجي ميسير هيج عيني
+216,يا دوب,بالكاد,scarcely,Adv,All_Regions,Colloquial,Lexicon_Project,يا دوب وصلت للمحاضرة الأولى
+217,أبو بريص,برص / وزغ,gecko,Noun,All_Regions,Colloquial,Lexicon_Project,أبو بريص خاف وشرد ورا الحايط
+218,حايط,جدار,wall,Noun,All_Regions,Colloquial,Lexicon_Project,لا تكتب على حايط الممر
+219,بزونة,قطة,cat,Noun,All_Regions,Colloquial,Lexicon_Project,البزونة نايمة جوة الميز
+220,جرو,صغير الكلب,puppy,Noun,All_Regions,Colloquial,Lexicon_Project,الجرو الصغير يلعب بالحديقة
+221,واير,سلك كهربائي,wire,Noun,All_Regions,Colloquial,Lexicon_Project,احذر من واير الكهرباء المكشوف
+222,بلايس,كماشة / زردية,pliers,Noun,All_Regions,Colloquial,Lexicon_Project,استخدم البلايس لقطع السلك
+223,درنفيس,مفك براغي,screwdriver,Noun,All_Regions,Colloquial,Lexicon_Project,محتاج درنفيس مربع ضروري
+224,برغي,مسمار لولبي,screw,Noun,All_Regions,Colloquial,Lexicon_Project,هذا البرغي مرخي حيل
+225,چكجكة,صوت الحركة أو الثرثرة,chattering / ticking,Noun,All_Regions,Slang,Lexicon_Project,اسمع چكجكة بالماكينة مالتك
+226,طوبة,كرة,ball,Noun,All_Regions,Colloquial,Lexicon_Project,طوبة الفراعنة ضاعت بالفرع
+227,جهال,أطفال,children,Noun,Central_and_South,Colloquial,Lexicon_Project,جهال الفرع يسوون هوسة هواية
+228,هدوم,ملابس,clothes,Noun,All_Regions,Colloquial,Lexicon_Project,رتب الهدوم بالخزانة مالتك
+229,قاط,بدلة رسمية,suit,Noun,All_Regions,Colloquial,Lexicon_Project,لبس قاط نيلي بالمناقشة
+230,رباط,ربطة عنق,tie,Noun,All_Regions,Colloquial,Lexicon_Project,الرباط مالتك لايق على القميص
+231,مالتي,خاصتي / لي,mine,Pronoun,All_Regions,Colloquial,Lexicon_Project,هذا الدفتر مالتك لو مالتي؟
+232,مالتك,خاصتك / لك,yours,Pronoun,All_Regions,Colloquial,Lexicon_Project,هذا الموبايل مالتك عيني
+233,مالته,خاصته / له,his,Pronoun,All_Regions,Colloquial,Lexicon_Project,كل واحد ياخذ الغرض مالته
+234,عگب باجر,بعد غد,day after tomorrow,Adv,Central_and_South,Colloquial,Lexicon_Project,الامتحان الشفهي عگب باجر
+235,أول بارحة,قبل أمس,day before yesterday,Adv,All_Regions,Colloquial,Lexicon_Project,التقيت بيه أول بارحة بالسوگ
+236,دوم,دائماً,always,Adv,All_Regions,Colloquial,Lexicon_Project,تمنياتي بالنجاح دوم إن شاء الله
+237,فد,أداة نكرة للتخصيص,a / an / single,Part,All_Regions,Colloquial,Lexicon_Project,عندي فد فكرة ممتازة للمشروع
+238,فد نوب,نهائياً / بالمرة,completely / at all,Adv,Central_and_South,Colloquial,Lexicon_Project,الكهرباء انطفت فد نوب اليوم
+239,شكو ماكو,ما الأخبار؟,what's up?,Phrase,All_Regions,Colloquial,Lexicon_Project,هلا عيني شكو ماكو أخبار؟
+240,ماكو شي,لا يوجد شيء,nothing,Phrase,All_Regions,Colloquial,Lexicon_Project,الحمد لله ماكو شي يخوف
+241,سوگ,سوق,market,Noun,All_Regions,Colloquial,Lexicon_Project,رحت للسوگ اشتريت تمر وعنب
+242,غراض,أمتعة / أغراض,things / items,Noun,All_Regions,Colloquial,Lexicon_Project,شيل الغراض الزايدة من الغرفة
+243,قلم جاف,قلم حبر جاف,ballpoint pen,Noun,All_Regions,Colloquial,Lexicon_Project,امتحن بالقلم الجاف الأزرق
+244,مكتوب,رسالة,letter,Noun,All_Regions,Colloquial,Lexicon_Project,كتبت مكتوب شكر للأساتذة
+245,بوسطة,بريد,mail / post,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الرسائل القديمة جانت تروح بالبوسطة
+246,چاي,شاي,tea,Noun,All_Regions,Colloquial,Lexicon_Project,الچاي العراقي مهيل وطيب
+247,استكان,قدح الشاي الصغير,tea glass,Noun,All_Regions,Colloquial,Lexicon_Project,صبلي استكان چاي سنغين
+248,شكر,سكر,sugar,Noun,All_Regions,Colloquial,Lexicon_Project,قلل الشكر بالچاي مالتك
+249,خاشوگة,ملعقة,spoon,Noun,All_Regions,Colloquial,Lexicon_Project,الخاشوگة وكعت جوة الكرسي
+250,چطل,شوكة طعام,fork,Noun,All_Regions,Colloquial,Lexicon_Project,ما اعرف اكل الرز بالچطل
+251,ماعون,صحن / طبق,plate / dish,Noun,All_Regions,Colloquial,Lexicon_Project,حط الفاكهة بماعون نظيف
+252,جدورة,قدور الطبخ,pots,Noun,All_Regions,Colloquial,Lexicon_Project,غسلت الجدورة الكبيرة بالمطبخ
+253,طباخ,موقد الغاز,stove / cooker,Noun,All_Regions,Colloquial,Lexicon_Project,نظف الطباخ بعد ما تخلص طبخ
+254,بانزخانة,محطة وقود,gas station,Noun,All_Regions,Colloquial,Lexicon_Project,البانزخانة مزدحمة كلش اليوم
+255,سايق,سائق,driver,Noun,All_Regions,Colloquial,Lexicon_Project,سايق الكيا يمشي سريع حيل
+256,گير,ناقل الحركة بالسيارة,gear,Noun,All_Regions,Colloquial,Lexicon_Project,الگير مالت السيارة معلق
+257,ستيرن,عجلة القيادة,steering wheel,Noun,All_Regions,Colloquial,Lexicon_Project,حرك الستيرن على اليمين شوية
+258,شغّل,ابدأ الإدارة / أوقد,turn on / start,Verb,All_Regions,Colloquial,Lexicon_Project,شغّل الحاسبة حتى نبدأ شغل
+259,بند,انطفأ / تعطل,turned off / stalled,Verb,All_Regions,Colloquial,Lexicon_Project,الجهاز بند لأن الشحن خلص
+260,ضوا,مصباح / نور,light,Noun,All_Regions,Colloquial,Lexicon_Project,ضوا الغرفة خافت كلش
+261,طفي,أطفئ,turn off,Verb,All_Regions,Colloquial,Lexicon_Project,طفي الموطور انترس التانكي
+262,لغوة,ثرثرة زائدة,nonsense talk / chatter,Noun,All_Regions,Slang,Lexicon_Project,عوف اللغوة الزايدة وركز بالدرس
+263,صياح,صراخ,screaming / shouting,Noun,All_Regions,Colloquial,Lexicon_Project,ليش هذا الصياح العالي هنا؟
+264,هوسة,فوضى / زحام / احتفال,crowd / chaos / dance,Noun,All_Regions,Colloquial,Lexicon_Project,الامتحان سوه هوسة بالقسم
+265,دربونة,زقاق ضيق,narrow alley,Noun,Central_and_South,Colloquial,Lexicon_Project,الدربونة مالتنا قديمة وتراثية
+266,حوش,فناء المنزل / ساحة,courtyard / house,Noun,Central_and_South,Colloquial,Lexicon_Project,كعدنا بالحوش العصر نشرب چاي
+267,طارمة,مدخل البيت,porch,Noun,Central_and_South,Colloquial,Lexicon_Project,رشينا الطارمة ماي بارد
+268,رازونة,نافذة صغيرة / رف في الجدار,niche / small window,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الرازونة بيها كتب قديمة كلش
+269,خانة,رف / خانة جدول,drawer / shelf / slot,Noun,All_Regions,Colloquial,Lexicon_Project,حط الأوراق بالخانة الأولى مالت المكتب
+270,قفل,مغلاق الباب,lock,Noun,All_Regions,Colloquial,Lexicon_Project,قفل الباب زين قبل ما تطلع
+271,سويچ,مفتاح التشغيل الكهربائي,switch / key,Noun,All_Regions,Colloquial,Lexicon_Project,نسيت سويچ السيارة بالبيت
+272,بلاگ,مأخذ كهربائي,plug,Noun,All_Regions,Colloquial,Lexicon_Project,حط بلاگ التلفزيون بالنقطة
+273,شاحنة,شاحن الهاتف,charger,Noun,All_Regions,Colloquial,Lexicon_Project,الشاحنة مالت الموبايل مالتي ضاعت
+274,موبايل,هاتف محمول,mobile phone,Noun,All_Regions,Colloquial,Lexicon_Project,الموبايل الجديد بيه مواصفات تخبل
+275,خابر,اتصل هاتفياً,called on phone,Verb,All_Regions,Colloquial,Lexicon_Project,خابرني من توصل للكلية
+276,حاچي,تحدث مع / كلم,talk to,Verb,All_Regions,Colloquial,Lexicon_Project,روح حاچي صديقك وصالحه
+277,حچي,كلام / حديث,talk / speech,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الحچي ميفيد هسه
+278,صدگ,حقاً / صدق,really / truth,Noun,All_Regions,Colloquial,Lexicon_Project,صدگ الحجي السمعته اليوم؟
+279,كذب,غير صحيح / كذب,lie / fake,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الادعاء كله كذب بكذب
+280,چذب,كذب بلفظ عامي,lie (dialectal),Noun,Central_and_South,Colloquial,Lexicon_Project,لا تكول چذب عيب عيني
+281,جذب,جلب / كذب حسب السياق,attracted / lie,Verb,All_Regions,Colloquial,Lexicon_Project,المشروع جذب هواية مساهمين
+282,انجب,اسكت (تُقال بحدة),shut up,Verb,All_Regions,Slang,Lexicon_Project,انجب ولا تدخل بمالا يعنيك
+283,إنجب,انكفأ / انصهر أو سكت,spilled / shut up,Verb,All_Regions,Colloquial,Lexicon_Project,اللبن إنجب على الميز وخربه
+284,كاع,أرض,ground / earth,Noun,All_Regions,Colloquial,Lexicon_Project,الكاع خضراء بعد المطر
+285,مطر,غيث / مطر,rain,Noun,All_Regions,Colloquial,Lexicon_Project,المطر غسل شوارع العزيزية اليوم
+286,شط,نهر,river,Noun,All_Regions,Colloquial,Lexicon_Project,شط دجلة خير وبركة للعراق
+287,بلم,قارب صغير,small boat,Noun,Southern_Iraq,Colloquial,Lexicon_Project,صعدنا ببلم وصيدنا سمك
+288,هور,مستنقع مائي طبيعي,marsh,Noun,Southern_Iraq,Colloquial,Lexicon_Project,جمال الهور ماله مثيل بالعالم
+289,مشحوف,قارب سومري تراثي,traditional canoe,Noun,Southern_Iraq,Colloquial,Lexicon_Project,المشحوف يتحرك بين القصب هاديء
+290,بردي,نبات القصب المائي,papyrus / reeds,Noun,Southern_Iraq,Colloquial,Lexicon_Project,نبات البردي ينمو بالأهوار بكثرة
+291,صريفة,كوخ من القصب والبردي,reed hut,Noun,Southern_Iraq,Colloquial,Lexicon_Project,الصريفة تراث عراقي قديم كلش
+292,طين,تراب مبلل,mud,Noun,All_Regions,Colloquial,Lexicon_Project,السيارة تغرزت بالطين بعد المطر
+293,عجاج,غبار كثيف / عاصفة رملية,dust storm,Noun,All_Regions,Colloquial,Lexicon_Project,الجو عجاج اليوم سد الشبابيك
+294,تراب,غبار,dust / dirt,Noun,All_Regions,Colloquial,Lexicon_Project,الملابس صار بيها تراب هواية
+295,مگص,مقص,scissors,Noun,All_Regions,Colloquial,Lexicon_Project,وين المگص أريد أقص القماش؟
+296,إبرة,أداة الخياطة,needle,Noun,All_Regions,Colloquial,Lexicon_Project,الإبرة ضاعت بالفرشة مالت النوم
+297,خيط,سلك الخياطة رفيع,thread,Noun,All_Regions,Colloquial,Lexicon_Project,محتاج خيط أبيض طويل كلش
+298,بكرة,ملف الخيوط,spool / bobbin,Noun,All_Regions,Colloquial,Lexicon_Project,بكرة الخيط خلصت لازم نشتري
+299,چرخ,عجلة / ترس التدوير,wheel / gear,Noun,All_Regions,Colloquial,Lexicon_Project,چرخ البايسكل مالتي يحتاج تزييت
+300,يفتر,يدور,spinning / wandering,Verb,All_Regions,Colloquial,Lexicon_Project,الولد يفتر بالحديقة مالت الكلية
+301,رايح,ذاهب,going,Adj,All_Regions,Colloquial,Lexicon_Project,أنا رايح للمكتبة مالت القسم
+302,جاي,قادم / آت,coming,Adj,All_Regions,Colloquial,Lexicon_Project,أخويا جاي بالدرب هسه وصلنا
+303,مگابل,مواجه لـ / مقابل,facing / opposite,Prep,All_Regions,Colloquial,Lexicon_Project,بيتنا صاير مگابل المدرسة بالضبط
+304,كعدت,جلست,sat down,Verb,All_Regions,Colloquial,Lexicon_Project,كعدت ويا الأستاذ وناقشنا البحث
+305,كرسي,مقعد,chair,Noun,All_Regions,Colloquial,Lexicon_Project,الكرسي مالت المكتب مكسور الظهر
+306,كنبة,أريكة,sofa / couch,Noun,All_Regions,Colloquial,Lexicon_Project,الكنبة مالت الخطار كلش واسعة
+307,مندر,فراش صغير للجلوس,cushion / small pad,Noun,All_Regions,Old_Colloquial,Lexicon_Project,افرش المندر عيني للخطار الجايين
+308,ديوانية,غرفة استقبال الرجال,reception room,Noun,Central_and_South,Colloquial,Lexicon_Project,الديوانية مالتنا هوسة اليوم بالناس
+309,كلاو,قبعة / خديعة حسب السياق,hat / trick,Noun,All_Regions,Colloquial,Lexicon_Project,لبس كلاو صوف من البرد
+310,لوف,دوران / خديعة,turn / trick,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الدرب بيه لوف قوية
+311,يبربش,يفتش بغير نظام,rummaging,Verb,All_Regions,Colloquial,Lexicon_Project,الطفل يبربش بالخزانة مالت الألعاب
+312,علكة,لبان,chewing gum,Noun,All_Regions,Colloquial,Lexicon_Project,العلكة مالت المي طيبة كلش
+313,جيس,كيس,bag,Noun,All_Regions,Colloquial,Lexicon_Project,حط الصمون بالجيس مالت الورق
+314,صمون,خبز عراقي تقليدي,iraqi bread,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت صمون حار من المخبز
+315,گونية,كيس كبير من الخيش,sack,Noun,All_Regions,Colloquial,Lexicon_Project,شيل گونية التمن وحطها هناك
+316,طاسة,وعاء معدني صغير,metal bowl,Noun,All_Regions,Colloquial,Lexicon_Project,اشرب ماي بالطاسة مالت المعدن
+317,كتلي,إبريق الشاي المعدني,kettle,Noun,All_Regions,Colloquial,Lexicon_Project,الكتلي يغلي على الطباخ هسه
+318,قوري,إبريق الشاي الخزفي,teapot,Noun,All_Regions,Colloquial,Lexicon_Project,خدر الچاي بالقوري الصيني زين
+319,شيشة,قنينة زجاجية,glass jar,Noun,All_Regions,Colloquial,Lexicon_Project,حط المربى بالشيشة مالت الزجاج
+320,بطل,قنينة,bottle,Noun,All_Regions,Colloquial,Lexicon_Project,وين بطل الماي البارد عيني؟
+321,كلاص,قدح زجاجي,glass,Noun,All_Regions,Colloquial,Lexicon_Project,صبلي كلاص عصير برتقال
+322,سطلة,دلو,bucket,Noun,All_Regions,Colloquial,Lexicon_Project,ترست السطلة ماي حتى اغسل
+323,خرقة,قطعة قماش للتنظيف,rag,Noun,All_Regions,Colloquial,Lexicon_Project,امسح الميز بخرقة نظيفة حيل
+324,وصلة,قطعة قماش أو رقعة,piece of cloth,Noun,All_Regions,Colloquial,Lexicon_Project,جيب وصلة قماش ابيض نغطيها
+325,شرباية,ناموسية أو سرير حسب النطق,mosquito net / bed,Noun,All_Regions,Old_Colloquial,Lexicon_Project,نصبنا الشرباية فوگ السطح بالصيف
+326,سطح,أعلى البيت,roof,Noun,All_Regions,Colloquial,Lexicon_Project,الجو بالسطح بالليل كلش حلو
+327,بنكة,مروحة سقفية,ceiling fan,Noun,All_Regions,Colloquial,Lexicon_Project,شغل البنكة الدنيا حارة فد نوب
+328,مكيف,جهاز تبريد الهواء,air conditioner,Noun,All_Regions,Colloquial,Lexicon_Project,المكيف مالتنا يحتاج غاز تصليح
+329,مبرد,مروحة تبريد بالماء,evaporative cooler,Noun,All_Regions,Colloquial,Lexicon_Project,المبردة تسوي رطوبة هواية بالبيت
+330,صوبة علاء الدين,نوع مدفأة نفطية تراثية,kerosene heater,Noun,All_Regions,Old_Colloquial,Lexicon_Project,صوبة علاء الدين تراث شتوي عراقي
+331,نفت,نفط / كيروسين,kerosene / oil,Noun,All_Regions,Colloquial,Lexicon_Project,ترسنا جليكان النفت للشتاء
+332,جليكان,وعاء بلاستيكي للسوائل,jerrycan,Noun,All_Regions,Colloquial,Lexicon_Project,وين جليكان الماي المخزون عيني؟
+333,صوندة,خرطوم مياه بلاستيكي,water hose,Noun,All_Regions,Colloquial,Lexicon_Project,اسقي الحديقة بالصوندة الطويلة
+334,مزهرية,وعاء الورد,vase,Noun,All_Regions,Colloquial,Lexicon_Project,حط الورد بالمزهرية مالت الصالة
+335,ورد,أزهار,flowers,Noun,All_Regions,Colloquial,Lexicon_Project,الورد العراقي ريحته طيبة كلش
+336,رازقي,نوع من الياسمين العراقي,jasmine,Noun,All_Regions,Colloquial,Lexicon_Project,شجرة الرازقي تملي الحوش عطر
+337,حديقة,بستان صغير بالبيت,garden,Noun,All_Regions,Colloquial,Lexicon_Project,رتبنا حديقة البيت وزرعنا نخل
+338,نخلة,شجرة التمر,palm tree,Noun,All_Regions,Colloquial,Lexicon_Project,النخلة مالتنا حملت تمر خستاوي طيب
+339,تمر,بلح مجفف,dates,Noun,All_Regions,Colloquial,Lexicon_Project,التمر العراقي مشهور بكل العالم دقة
+340,خلال,البلح في مرحلته الأولى,unripe dates,Noun,All_Regions,Colloquial,Lexicon_Project,أحب اكل الخلال الاصفر بالصيف
+341,رطب,البلح الناضج الطري,ripe dates,Noun,All_Regions,Colloquial,Lexicon_Project,الرطب ينزل بالسوگ بشهر الثامن
+342,سعفة,غصن النخلة,palm frond,Noun,All_Regions,Colloquial,Lexicon_Project,سوينا مروحة يد من سعفة النخلة
+343,خوص,أوراق النخل الدقيقة,palm leaves,Noun,All_Regions,Colloquial,Lexicon_Project,صناعة الخوص مهنة تراثية قديمة حيل
+344,سلة,وعاء من الخوص أو البلاستيك,basket,Noun,All_Regions,Colloquial,Lexicon_Project,حط التمر بالسلة مالت الخوص
+345,زبيل,وعاء كبير من الخوص للمزارع,large woven basket,Noun,Central_and_South,Colloquial,Lexicon_Project,المزارع ترس الزبيل تمر من النخلة
+346,حبل,سلك سميك للربط,rope,Noun,All_Regions,Colloquial,Lexicon_Project,اربط السلة بحبل قوي عيني
+347,درج,سلم,stairs / ladder,Noun,All_Regions,Colloquial,Lexicon_Project,اصعد بالدرج على كيفك لا توكع
+348,سطيل,دلو صغير بلفظ آخر,small bucket,Noun,Central_and_South,Colloquial,Lexicon_Project,جيب السطيل نترسه ماي حار
+349,هدوم الشغل,ملابس العمل,work clothes,Noun,All_Regions,Colloquial,Lexicon_Project,بدلت هدوم الشغل ولبست نظيف
+350,بسطال,حذاء عسكري ثقيل,combat boots,Noun,All_Regions,Colloquial,Lexicon_Project,البسطال ثقيل كلش بالمشي الطويل
+351,عرقچين,طاقية رأس صوفية خفيفة,skullcap,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الجد يلبس عرقچين بيضاء دائماً
+352,يشماغ,غطاء الرأس التراثي العراقي,keffiyeh,Noun,All_Regions,Colloquial,Lexicon_Project,اليشماغ الاحمر رمز التراث بالجنوب
+353,عقال,رباط يشماغ أسود,aggal,Noun,All_Regions,Colloquial,Lexicon_Project,عدل العقال مالتك بالمناسبة عيني
+275,خابر,اتصل هاتفياً,called on phone,Verb,All_Regions,Colloquial,Lexicon_Project,خابرني من توصل للكلية
+276,حاچي,تحدث مع / كلم,talk to,Verb,All_Regions,Colloquial,Lexicon_Project,روح حاچي صديقك وصالحه
+277,حچي,كلام / حديث,talk / speech,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الحچي ميفيد هسه
+278,صدگ,حقاً / صدق,really / truth,Noun,All_Regions,Colloquial,Lexicon_Project,صدگ الحجي السمعته اليوم؟
+279,كذب,غير صحيح / كذب,lie / fake,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الادعاء كله كذب بكذب
+280,چذب,كذب بلفظ عامي,lie (dialectal),Noun,Central_and_South,Colloquial,Lexicon_Project,لا تكول چذب عيب عيني
+281,جذب,جلب / كذب حسب السياق,attracted / lie,Verb,All_Regions,Colloquial,Lexicon_Project,المشروع جذب هواية مساهمين
+282,انجب,اسكت (تُقال بحدة),shut up,Verb,All_Regions,Slang,Lexicon_Project,انجب ولا تدخل بمالا يعنيك
+283,إنجب,انكفأ / انصهر أو سكت,spilled / shut up,Verb,All_Regions,Colloquial,Lexicon_Project,اللبن إنجب على الميز وخربه
+284,كاع,أرض,ground / earth,Noun,All_Regions,Colloquial,Lexicon_Project,الكاع خضراء بعد المطر
+285,مطر,غيث / مطر,rain,Noun,All_Regions,Colloquial,Lexicon_Project,المطر غسل شوارع العزيزية اليوم
+286,شط,نهر,river,Noun,All_Regions,Colloquial,Lexicon_Project,شط دجلة خير وبركة للعراق
+287,بلم,قارب صغير,small boat,Noun,Southern_Iraq,Colloquial,Lexicon_Project,صعدنا ببلم وصيدنا سمك
+288,هور,مستنقع مائي طبيعي,marsh,Noun,Southern_Iraq,Colloquial,Lexicon_Project,جمال الهور ماله مثيل بالعالم
+289,مشحوف,قارب سومري تراثي,traditional canoe,Noun,Southern_Iraq,Colloquial,Lexicon_Project,المشحوف يتحرك بين القصب هاديء
+290,بردي,نبات القصب المائي,papyrus / reeds,Noun,Southern_Iraq,Colloquial,Lexicon_Project,نبات البردي ينمو بالأهوار بكثرة
+291,صريفة,كوخ من القصب والبردي,reed hut,Noun,Southern_Iraq,Colloquial,Lexicon_Project,الصريفة تراث عراقي قديم كلش
+292,طين,تراب مبلل,mud,Noun,All_Regions,Colloquial,Lexicon_Project,السيارة تغرزت بالطين بعد المطر
+293,عجاج,غبار كثيف / عاصفة رملية,dust storm,Noun,All_Regions,Colloquial,Lexicon_Project,الجو عجاج اليوم سد الشبابيك
+294,تراب,غبار,dust / dirt,Noun,All_Regions,Colloquial,Lexicon_Project,الملابس صار بيها تراب هواية
+295,مگص,مقص,scissors,Noun,All_Regions,Colloquial,Lexicon_Project,وين المگص أريد أقص القماش؟
+296,إبرة,أداة الخياطة,needle,Noun,All_Regions,Colloquial,Lexicon_Project,الإبرة ضاعت بالفرشة مالت النوم
+297,خيط,سلك الخياطة رفيع,thread,Noun,All_Regions,Colloquial,Lexicon_Project,محتاج خيط أبيض طويل كلش
+298,بكرة,ملف الخيوط,spool / bobbin,Noun,All_Regions,Colloquial,Lexicon_Project,بكرة الخيط خلصت لازم نشتري
+299,چرخ,عجلة / ترس التدوير,wheel / gear,Noun,All_Regions,Colloquial,Lexicon_Project,چرخ البايسكل مالتي يحتاج تزييت
+300,يفتر,يدور,spinning / wandering,Verb,All_Regions,Colloquial,Lexicon_Project,الولد يفتر بالحديقة مالت الكلية
+301,رايح,ذاهب,going,Adj,All_Regions,Colloquial,Lexicon_Project,أنا رايح للمكتبة مالت القسم
+302,جاي,قادم / آت,coming,Adj,All_Regions,Colloquial,Lexicon_Project,أخويا جاي بالدرب هسه وصلنا
+303,مگابل,مواجه لـ / مقابل,facing / opposite,Prep,All_Regions,Colloquial,Lexicon_Project,بيتنا صاير مگابل المدرسة بالضبط
+304,كعدت,جلست,sat down,Verb,All_Regions,Colloquial,Lexicon_Project,كعدت ويا الأستاذ وناقشنا البحث
+305,كرسي,مقعد,chair,Noun,All_Regions,Colloquial,Lexicon_Project,الكرسي مالت المكتب مكسور الظهر
+306,كنبة,أريكة,sofa / couch,Noun,All_Regions,Colloquial,Lexicon_Project,الكنبة مالت الخطار كلش واسعة
+307,مندر,فراش صغير للجلوس,cushion / small pad,Noun,All_Regions,Old_Colloquial,Lexicon_Project,افرش المندر عيني للخطار الجايين
+308,ديوانية,غرفة استقبال الرجال,reception room,Noun,Central_and_South,Colloquial,Lexicon_Project,الديوانية مالتنا هوسة اليوم بالناس
+309,كلاو,قبعة / خديعة حسب السياق,hat / trick,Noun,All_Regions,Colloquial,Lexicon_Project,لبس كلاو صوف من البرد
+310,لوف,دوران / خديعة,turn / trick,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الدرب بيه لوف قوية
+311,يبربش,يفتش بغير نظام,rummaging,Verb,All_Regions,Colloquial,Lexicon_Project,الطفل يبربش بالخزانة مالت الألعاب
+312,علكة,لبان,chewing gum,Noun,All_Regions,Colloquial,Lexicon_Project,العلكة مالت المي طيبة كلش
+313,جيس,كيس,bag,Noun,All_Regions,Colloquial,Lexicon_Project,حط الصمون بالجيس مالت الورق
+314,صمون,خبز عراقي تقليدي,iraqi bread,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت صمون حار من المخبز
+315,گونية,كيس كبير من الخيش,sack,Noun,All_Regions,Colloquial,Lexicon_Project,شيل گونية التمن وحطها هناك
+316,طاسة,وعاء معدني صغير,metal bowl,Noun,All_Regions,Colloquial,Lexicon_Project,اشرب ماي بالطاسة مالت المعدن
+317,كتلي,إبريق الشاي المعدني,kettle,Noun,All_Regions,Colloquial,Lexicon_Project,الكتلي يغلي على الطباخ هسه
+318,قوري,إبريق الشاي الخزفي,teapot,Noun,All_Regions,Colloquial,Lexicon_Project,خدر الچاي بالقوري الصيني زين
+319,شيشة,قنينة زجاجية,glass jar,Noun,All_Regions,Colloquial,Lexicon_Project,حط المربى بالشيشة مالت الزجاج
+320,بطل,قنينة,bottle,Noun,All_Regions,Colloquial,Lexicon_Project,وين بطل الماي البارد عيني؟
+321,كلاص,قدح زجاجي,glass,Noun,All_Regions,Colloquial,Lexicon_Project,صبلي كلاص عصير برتقال
+322,سطلة,دلو,bucket,Noun,All_Regions,Colloquial,Lexicon_Project,ترست السطلة ماي حتى اغسل
+323,خرقة,قطعة قماش للتنظيف,rag,Noun,All_Regions,Colloquial,Lexicon_Project,امسح الميز بخرقة نظيفة حيل
+324,وصلة,قطعة قماش أو رقعة,piece of cloth,Noun,All_Regions,Colloquial,Lexicon_Project,جيب وصلة قماش ابيض نغطيها
+325,شرباية,ناموسية أو سرير حسب النطق,mosquito net / bed,Noun,All_Regions,Old_Colloquial,Lexicon_Project,نصبنا الشرباية فوگ السطح بالصيف
+326,سطح,أعلى البيت,roof,Noun,All_Regions,Colloquial,Lexicon_Project,الجو بالسطح بالليل كلش حلو
+327,بنكة,مروحة سقفية,ceiling fan,Noun,All_Regions,Colloquial,Lexicon_Project,شغل البنكة الدنيا حارة فد نوب
+328,مكيف,جهاز تبريد الهواء,air conditioner,Noun,All_Regions,Colloquial,Lexicon_Project,المكيف مالتنا يحتاج غاز تصليح
+329,مبرد,مروحة تبريد بالماء,evaporative cooler,Noun,All_Regions,Colloquial,Lexicon_Project,المبردة تسوي رطوبة هواية بالبيت
+330,صوبة علاء الدين,نوع مدفأة نفطية تراثية,kerosene heater,Noun,All_Regions,Old_Colloquial,Lexicon_Project,صوبة علاء الدين تراث شتوي عراقي
+331,نفت,نفط / كيروسين,kerosene / oil,Noun,All_Regions,Colloquial,Lexicon_Project,ترسنا جليكان النفت للشتاء
+332,جليكان,وعاء بلاستيكي للسوائل,jerrycan,Noun,All_Regions,Colloquial,Lexicon_Project,وين جليكان الماي المخزون عيني؟
+333,صوندة,خرطوم مياه بلاستيكي,water hose,Noun,All_Regions,Colloquial,Lexicon_Project,اسقي الحديقة بالصوندة الطويلة
+334,مزهرية,وعاء الورد,vase,Noun,All_Regions,Colloquial,Lexicon_Project,حط الورد بالمزهرية مالت الصالة
+335,ورد,أزهار,flowers,Noun,All_Regions,Colloquial,Lexicon_Project,الورد العراقي ريحته طيبة كلش
+336,رازقي,نوع من الياسمين العراقي,jasmine,Noun,All_Regions,Colloquial,Lexicon_Project,شجرة الرازقي تملي الحوش عطر
+337,حديقة,بستان صغير بالبيت,garden,Noun,All_Regions,Colloquial,Lexicon_Project,رتبنا حديقة البيت وزرعنا نخل
+338,نخلة,شجرة التمر,palm tree,Noun,All_Regions,Colloquial,Lexicon_Project,النخلة مالتنا حملت تمر خستاوي طيب
+339,تمر,بلح مجفف,dates,Noun,All_Regions,Colloquial,Lexicon_Project,التمر العراقي مشهور بكل العالم دقة
+340,خلال,البلح في مرحلته الأولى,unripe dates,Noun,All_Regions,Colloquial,Lexicon_Project,أحب اكل الخلال الاصفر بالصيف
+341,رطب,البلح الناضج الطري,ripe dates,Noun,All_Regions,Colloquial,Lexicon_Project,الرطب ينزل بالسوگ بشهر الثامن
+342,سعفة,غصن النخلة,palm frond,Noun,All_Regions,Colloquial,Lexicon_Project,سوينا مروحة يد من سعفة النخلة
+343,خوص,أوراق النخل الدقيقة,palm leaves,Noun,All_Regions,Colloquial,Lexicon_Project,صناعة الخوص مهنة تراثية قديمة حيل
+344,سلة,وعاء من الخوص أو البلاستيك,basket,Noun,All_Regions,Colloquial,Lexicon_Project,حط التمر بالسلة مالت الخوص
+345,زبيل,وعاء كبير من الخوص للمزارع,large woven basket,Noun,Central_and_South,Colloquial,Lexicon_Project,المزارع ترس الزبيل تمر من النخلة
+346,حبل,سلك سميك للربط,rope,Noun,All_Regions,Colloquial,Lexicon_Project,اربط السلة بحبل قوي عيني
+347,درج,سلم,stairs / ladder,Noun,All_Regions,Colloquial,Lexicon_Project,اصعد بالدرج على كيفك لا توكع
+348,سطيل,دلو صغير بلفظ آخر,small bucket,Noun,Central_and_South,Colloquial,Lexicon_Project,جيب السطيل نترسه ماي حار
+349,هدوم الشغل,ملابس العمل,work clothes,Noun,All_Regions,Colloquial,Lexicon_Project,بدلت هدوم الشغل ولبست نظيف
+350,بسطال,حذاء عسكري ثقيل,combat boots,Noun,All_Regions,Colloquial,Lexicon_Project,البسطال ثقيل كلش بالمشي الطويل
+351,عرقچين,طاقية رأس صوفية خفيفة,skullcap,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الجد يلبس عرقچين بيضاء دائماً
+352,يشماغ,غطاء الرأس التراثي العراقي,keffiyeh,Noun,All_Regions,Colloquial,Lexicon_Project,اليشماغ الاحمر رمز التراث بالجنوب
+353,عقال,رباط يشماغ أسود,aggal,Noun,All_Regions,Colloquial,Lexicon_Project,عدل العقال مالتك بالمناسبة عيني
+354,عباية,كساء طويل للمرأة أو الرجل,abaya,Noun,All_Regions,Colloquial,Lexicon_Project,الوالدة لبست العباية وراحت للزيارة
+355,محفظة,حقيبة صغيرة للمال,wallet / purse,Noun,All_Regions,Colloquial,Lexicon_Project,ضيعت محفظة الفلوس بالتاكسي اليوم
+356,جزدان,محفظة نقود بلفظ قديم,coin purse,Noun,All_Regions,Old_Colloquial,Lexicon_Project,بيبية حاطة الفلوس بالجزدان مالتها
+357,فلوس,نقود / أموال,money,Noun,All_Regions,Colloquial,Lexicon_Project,ما عندي فلوس زايدة للكتب هسه
+358,خردة,نقود معدنية أو صغيرة,small change,Noun,All_Regions,Colloquial,Lexicon_Project,عندك خردة مالت ألف دينار عيني؟
+359,دينار,العملة العراقية,dinar,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت الغرض بألف دينار عراقي
+360,أبو الألف,ورقة نقدية فئة ألف دينار,one thousand dinars note,Noun,All_Regions,Slang,Lexicon_Project
+361,ميز,طاولة,table,Noun,All_Regions,Colloquial,Lexicon_Project,حط كتاب الإنجليزي على الميز
+362,صوبة كهربائية,مدفأة تعمل بالكهرباء,electric heater,Noun,All_Regions,Colloquial,Lexicon_Project,الدنيا باردة شغل الصوبة الكهربائية
+363,بلكونة,شرفة,balcony,Noun,All_Regions,Colloquial,Lexicon_Project,وقفت بالبلكونة اشوف الشارع
+364,جام خانة,واجهة زجاجية للمحلات,glass showcase,Noun,All_Regions,Colloquial,Lexicon_Project,غراض المحل معروضة بالجام خانة
+365,قاطات,أطقم رسمية / دفعات,suits / batches,Noun,All_Regions,Colloquial,Lexicon_Project,وصلت الغراض على قاطات وجبات
+366,هدوم العيد,ملابس المناسبات,Eid clothes,Noun,All_Regions,Colloquial,Lexicon_Project,الجهال فرحانين ب هدوم العيد الجديدة
+367,تيل,عمود الكهرباء أو الهاتف,utility pole,Noun,All_Regions,Colloquial,Lexicon_Project,واير المولد انقطع من تيل الشارع
+368,بايسكل,دراجة هوائية,bicycle,Noun,All_Regions,Colloquial,Lexicon_Project,الولد الصغير يركب بايسكل بالحوش
+369,ماطور,محرك / دراجة نارية,motor / motorcycle,Noun,All_Regions,Colloquial,Lexicon_Project,سمعت صوت ماطور عالي بره
+370,ستوتة,دراجة نارية بثلاث عجلات للنقل,tricycle cargo,Noun,All_Regions,Colloquial,Lexicon_Project,حملنا الغراض الثقيلة بالستوتة
+371,كيا,حافلة نقل صغيرة شائعة,minibus,Noun,All_Regions,Colloquial,Lexicon_Project,صعدت ب سيارة كيا حتى اروح للجامعة
+372,تاكسي,سيارة أجرة,taxi,Noun,All_Regions,Colloquial,Lexicon_Project,أخذت تاكسي لأن جان عندي تأخير
+373,خط,وسيلة نقل يومية مشتركة,commute line,Noun,All_Regions,Colloquial,Lexicon_Project,سجلت ب خط جديد ويا الطلاب
+374,محطة,مكان توقف الحافلات أو القطار,station,Noun,All_Regions,Colloquial,Lexicon_Project,القطار وصل للمحطة بوقته المحدد
+375,درب,طريق / مسار,path / way,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الدرب طويل ويحتاج صبر
+376,سيطرة,نقطة تفتيش أمنية,checkpoint,Noun,All_Regions,Colloquial,Lexicon_Project,السيارات وگفن يم سيطرة المدخل
+377,هوية,بطاقة تعريفية,ID card,Noun,All_Regions,Colloquial,Lexicon_Project,شوفني الهوية مالتك عيني قبل الدخول
+378,جنسية,الهوية الشخصية القديمة,nationality document,Noun,All_Regions,Colloquial,Lexicon_Project,طلعت الجنسية من المحفظة مالتي
+379,تأمين,ضمان أو حماية,insurance / security,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الإجراء بيه تأمين للشغل مالتنا
+380,ورقة,سند / عملة فئة 100 دولار,paper / 100 dollar bill,Noun,All_Regions,Slang,Lexicon_Project,صرف الموبايل طلع ب خمس ورقات
+381,بلاش,مجاناً / بدون مقابل,for free,Adv,All_Regions,Colloquial,Lexicon_Project,هذا البرنامج نزلته ببلاش من النت
+382,غالي,مرتفع الثمن,expensive,Adj,All_Regions,Colloquial,Lexicon_Project,الكتاب هذا غالي كلش بالسوگ
+383,رخيص,منخفض الثمن,cheap,Adj,All_Regions,Colloquial,Lexicon_Project,لكيت قماش رخيص وممتاز للخياطة
+384,قماش,ثوب قبل التفصيل,fabric / cloth,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت قماش أسود سويت بيه عباية
+385,خياط,من يحرف حياكة الملابس,tailor,Noun,All_Regions,Colloquial,Lexicon_Project,الخياط أخذ قياس القاط الجديد
+386,دگة,نقرة / دقة أو حركة ناقصة,trick / beat / step,Noun,All_Regions,Slang,Lexicon_Project,سوا ويايا دگة مو حلوة وعافني
+387,فيكة,حركة استعراضية / ميزة جمالية,stylish feature / trick,Noun,All_Regions,Slang,Lexicon_Project,الموبايل الجديد بيه فيكة تخبل بالكميرة
+388,لوفي,مراوغ / يلف ويدور,deceitful / twister,Adj,All_Regions,Slang,Lexicon_Project,ابتعد عن الولد اللوفي بالحجي
+389,صادگ,صادق / يقول الحق,truthful,Adj,All_Regions,Colloquial,Lexicon_Project,هذا السايق صادگ ومينقاد ورا الجذب
+390,أستاذ,مدرس جامعي أو لقب احترام,professor / teacher,Noun,All_Regions,Colloquial,Lexicon_Project,الأستاذ شرح مادة النحو اليوم زين
+391,قسم,فرع دراسي بالكلية,department,Noun,All_Regions,Colloquial,Lexicon_Project,قسم اللغة الإنجليزية بالكلية مالتنا منظم
+392,عميد,رئيس الكلية الأكاديمي,dean,Noun,All_Regions,Colloquial,Lexicon_Project,العميد وافق على طلب الإجازة مالتنا
+393,محاضرة,درس جامعي,lecture,Noun,All_Regions,Colloquial,Lexicon_Project,المحاضرة الأولى تبدأ ب الساعة ثمانية الصبح
+394,امتحان,اختبار تقييمي,exam,Noun,All_Regions,Colloquial,Lexicon_Project,الامتحان جان بيه صعوبة وشوية لغوة
+395,دفتر امتحاني,كراسة الإجابة الرسمية,exam booklet,Noun,All_Regions,Colloquial,Lexicon_Project,اكتب اسمك الثلاثي على الدفتر الامتحاني
+396,قلم رصاص,أداة كتابة كربونية,pencil,Noun,All_Regions,Colloquial,Lexicon_Project,ارسم المخطط بالدفتر باستخدام قلم رصاص
+397,مساحة,ممحاة القلم,eraser,Noun,All_Regions,Colloquial,Lexicon_Project,مسحت الخطأ بال جاف باستخدام مساحة خاصة
+398,مقطة,براية الأقلام,pencil sharpener,Noun,All_Regions,Colloquial,Lexicon_Project,المقطة ضاعت وما اكدر اقط القلم
+399,جنطة,حقيبة,bag / backpack,Noun,All_Regions,Colloquial,Lexicon_Project,حطيت لابتوب الدراسة بنص الجنطة
+400,لابتوب,حاسوب محمول,laptop,Noun,All_Regions,Colloquial,Lexicon_Project,المشروع مالتنا مخزون على اللابتوب مالتي
+401,فلاش ميموري,وحدة تخزين رقمية متنقلة,USB flash drive,Noun,All_Regions,Colloquial,Lexicon_Project,انقل ملفات الـ Corpus على الفلاش ميموري
+402,حاسبة,كمبيوتر أو آلة حاسبة,computer / calculator,Noun,All_Regions,Colloquial,Lexicon_Project,شغل الحاسبة الكبيرة حتى نسوي الفلترة
+403,نت,إنترنت,internet,Noun,All_Regions,Colloquial,Lexicon_Project,النت اليوم ضعيف حيل وميفتح حساب GitHub
+404,راوتر,جهاز بث الإشارة اللاسلكية,router,Noun,All_Regions,Colloquial,Lexicon_Project,سوي ريستارت للراوتر الضوا ماله أحمر
+405,كلية,مؤسسة التعليم العالي,college,Noun,All_Regions,Colloquial,Lexicon_Project,اليوم الكلية بيها زحام هوسة من الصبح
+406,نادي,مطعم أو استراحة الكلية,college cafeteria / club,Noun,All_Regions,Colloquial,Lexicon_Project,كعدنا بنادي الكلية شربنا چاي مهيل
+407,خطار,ضيوف,guests,Noun,All_Regions,Colloquial,Lexicon_Project,اليوم جايبين خطار ولازم نرتب الديوانية
+408,هلا بك,ترحاب بالقادم,welcome,Phrase,All_Regions,Colloquial,Lexicon_Project,هلا بك عيني نورت الحوش مالتنا
+409,شرفتونا,تعابير ترحيب بالضيوف,honored us,Phrase,All_Regions,Colloquial,Lexicon_Project,شرفتونا يا طيبين ب جيتكم هاي
+410,عافيات,دعاء بالصحة عند الأكل,health / bon appétit,Phrase,All_Regions,Colloquial,Lexicon_Project,أكل التمن والمرگة وعافيات على گلبك
+411,بأمان الله,عبارة توديع عند المغادرة,goodbye,Phrase,All_Regions,Colloquial,Lexicon_Project,مع السلامة عيني وبأمان الله نلتقي باجر
+412,الله وياك,توديع للمسافر أو المغادر,may God be with you,Phrase,All_Regions,Colloquial,Lexicon_Project,الله وياك حجي درب السلامة إن شاء الله
+413,فدوة تروح لك,تعبير عن الافتداء والمحبة,may it be sacrificed for you,Phrase,All_Regions,Colloquial,Lexicon_Project,الغراض الضاعت فدوة تروح لك عيني
+414,من عيوني,حاضر ومن دواعي سروري,willingly / with pleasure,Phrase,All_Regions,Colloquial,Lexicon_Project,تدلل عيني اسوي لك الفلترة من عيوني
+415,صار تدلل,تعبير عن الموافقة الفورية,sure / consider it done,Phrase,All_Regions,Colloquial,Lexicon_Project,تريد أرفع الـ 100 كلمة؟ صار تدلل هسه
+416,ما قصرت,شكر على المساعدة,you didn't disappoint,Phrase,All_Regions,Colloquial,Lexicon_Project,مشكور عيني تعبتك ويايا وما قصرت فد نوب
+417,رحم الله والديك,دعاء للشخص ولوالديه عند الشكر,God bless your parents,Phrase,All_Regions,Colloquial,Lexicon_Project,رحم الله والديك على هذا الشرح الاحترافي
+418,تعبناك ويايا,اعتذار لطيف عند طلب خدمة,we tired you with us,Phrase,All_Regions,Colloquial,Lexicon_Project,أدري الشغل هواية وتعبناك ويايا بالمشروع
+419,تعبك راحة,رد لطيف على الشكر,your trouble is a pleasure,Phrase,All_Regions,Colloquial,Lexicon_Project,العفو عيني تعبك راحة والمشروع يستاهل
+420,كفو منك,تعبير عن المدح والنخوة,bravo / proud of you,Phrase,All_Regions,Colloquial,Lexicon_Project,اشتغلت الكود صح وكفو منك يا بطل
+421,صادق,يقول الحق بلفظ فصيح وعامي,honest,Adj,All_Regions,Colloquial,Lexicon_Project,الولد صادق بكلامه وميكذب فد نوب
+422,شغلة تعبانة,وصف لأمر سيء أو رديء,bad business / messy situation,Phrase,All_Regions,Slang,Lexicon_Project,تنظيم الملفات القديم جان شغلة تعبانة
+423,مورط,واقع في مشكلة أو ورطة,entangled / in trouble,Adj,All_Regions,Colloquial,Lexicon_Project,السايق طلع مورط ب حادث وميقدر يجي
+424,معدل,شخص كفو / ممتاز أو نسبة النجاح,excellent / GPA,Adj,All_Regions,Colloquial,Lexicon_Project,هذا الحجي معدل ومابيه أي لغوة زايدة
+425,شامخ,مرتفع وعالي المكانة,lofty / proud,Adj,All_Regions,Colloquial,Lexicon_Project,النخل العراقي يظل شامخ بالبساتين دوم
+426,خوش ولد,شخص طيب ذو أخلاق عالية,good guy,Phrase,All_Regions,Colloquial,Lexicon_Project,أحمد خوش ولد ويساعدنا برفع الكلمات دائماً
+427,فد شي,شيء رائع ومميز جداً,something special,Phrase,All_Regions,Slang,Lexicon_Project,الكود الجديد مالت المعجم طلع فد شي يخبل
+428,شال,غادر المكان أو رفع الأغراض,moved out / lifted,Verb,All_Regions,Colloquial,Lexicon_Project,الجيران شالوا من الدربونة مالتنا البارحة
+429,حط,وضع الشيء في مكان محدد,put / placed,Verb,All_Regions,Colloquial,Lexicon_Project,حط المفاتيح مالت السيارة بالخانة الفوقانية
+430,دز,أرسل,sent,Verb,All_Regions,Colloquial,Lexicon_Project,دزيت له الرسالة مالت الرابط بالبوسطة الرقمية
+431,لگة,وجد الشيء المفقود,found,Verb,All_Regions,Colloquial,Lexicon_Project,أخيراً لگيت قلم رصاص الضايع جوة الميز
+432,شرد,هرب مسرعاً,escaped / fled,Verb,All_Regions,Colloquial,Lexicon_Project,الحرامي شاف الشرطي وشرد بنص الهوسة
+433,فات,دخل أو مر من جانب شيء,entered / passed by,Verb,All_Regions,Colloquial,Lexicon_Project,السايق فات من دربونة ضيقة كلش بالسيارة
+434,طلع,خرج أو ظهر,went out / appeared,Verb,All_Regions,Colloquial,Lexicon_Project,الولد طلع للسوگ يشتري صمون حار
+435,نزل,هبط للأسفل,descended / went down,Verb,All_Regions,Colloquial,Lexicon_Project,نزل المطر قوي وغسل تراب الكاع كله
+436,صعد,ارتفع للأعلى,ascended / went up,Verb,All_Regions,Colloquial,Lexicon_Project,صعدت بالدرج مالت القسم حتى اروح للمكتب
+437,طار,ارتفع بالهواء / ذهب مسرعاً,flew / rushed,Verb,All_Regions,Colloquial,Lexicon_Project,الطير طار فوگ السطح مالت البيت وعافنا
+438,وگع,سقط أرضاً,fell down,Verb,All_Regions,Colloquial,Lexicon_Project,استكان الچاي وگع على الكاع وانكسر فد نوب
+439,طاح,سقط بلفظ آخر دارج بالجنوب,fell (southern dialect),Verb,Southern_Iraq,Colloquial,Lexicon_Project,التمر طاح من النخلة بنص الزبيل الكبير
+440,كام,نهض أو بدأ الفعل,stood up / started,Verb,All_Regions,Colloquial,Lexicon_Project,الولد كام يدرس من الصبح مطلع الدفاتر ماله
+441,گعد,جلس أو استيقظ حسب السياق,sat down / woke up,Verb,All_Regions,Colloquial,Lexicon_Project,گعدت من النوم غسلت وجهي ورحت للدوام
+442,نام,استلقى للنوم,slept,Verb,All_Regions,Colloquial,Lexicon_Project,الطفل الصغير نام على الجرباية المريحة هسه
+443,قعد,جلس بلفظ فصيح أو بقلب القاف گاف,sat down (standard variant),Verb,All_Regions,Colloquial,Lexicon_Project,قعد الطلاب بمقاعدهم ينتظرون محاضرة الدكتور
+444,مشى,سار بالقدم,walked,Verb,All_Regions,Colloquial,Lexicon_Project,السايق مشى سريع بالتاكسي على الدرب الخارجي
+445,ركض,جرى مسرعاً,ran,Verb,All_Regions,Colloquial,Lexicon_Project,ركضت سريع حتى الحق على الكيا بالساحة
+446,طفر,قفز فجأة,jumped / leaped,Verb,All_Regions,Colloquial,Lexicon_Project,البزونة طفرت من فوگ الحايط مالت الجيران
+447,سبح,اغتسل بالماء,bathed / swam,Verb,All_Regions,Colloquial,Lexicon_Project,الولد سبح بالماي البارد بعد شغل البستان الشاق
+448,غسل,نظف بالماء والصابون,washed,Verb,All_Regions,Colloquial,Lexicon_Project,غسلت الهدوم المبهذلة وطلعت نظيفة وحلوة كلش
+449,مسح,أزال الغبار أو السوائل,wiped / erased,Verb,All_Regions,Colloquial,Lexicon_Project,مسحت الكاع مالت الطارمة من الماي والتراب
+450,خمط,سرق أو أخذ الشيء بسرعة بدون إذن,snatched / stole,Verb,All_Regions,Slang,Lexicon_Project,الحرامي خمط الموبايل من الميز وشرد سريع
+451,باگ,سرق بلفظ عامي أصيل,stole (dialectal),Verb,All_Regions,Colloquial,Lexicon_Project,محد باگ الغراض هي مجرد ضاعت بالهوسة
+452,لزم,أمسك الشيء بقوة,held / caught,Verb,All_Regions,Colloquial,Lexicon_Project,الزم ستيرن السيارة زين لا تروح يمين وشمال
+453,عض,عض بالأسنان,bit,Verb,All_Regions,Colloquial,Lexicon_Project,الكلب الصغير عض الواير مالت الكهرباء المكشوف
+454,بچى,بكى وأرسل الدموع,cried,Verb,All_Regions,Colloquial,Lexicon_Project,الطفل بچى حيل لأن اللعبة مالتة انكسرت فجأة
+455,ضحك,أبدى السرور بصوت,laughed,Verb,All_Regions,Colloquial,Lexicon_Project,ضحكنا هواية على السالفة الحلوة السمعناها البارحة
+456,صاح,نادى بصوت عالٍ / صرخ,called out / shouted,Verb,All_Regions,Colloquial,Lexicon_Project,الأستاذ صاح باسمي بالكلية حتى استلم النتيجة
+457,سكت,امتنع عن الكلام,became silent,Verb,All_Regions,Colloquial,Lexicon_Project,الكل سكت بنص القاعة من فات العميد فجأة
+458,حچى,تكلم بالعامية,spoke (dialectal),Verb,All_Regions,Colloquial,Lexicon_Project,هو حچى ويايا بخصوص الإضافة مالت الصديق كمساهم
+459,سولف,تحدث وسرد القصص والأخبار,chatted / told stories,Verb,All_Regions,Colloquial,Lexicon_Project,جدو سولف لنا قصة قديمة عن تاريخ العراق والاهوار
+460,قرص,ضغط بالأصابع أو قرص الخبز,pinched / baked round,Verb,All_Regions,Colloquial,Lexicon_Project,الوالدة قرصت العجين حتى تخبز صمون حار بالحوش
+461,عبر,اجتاز الطريق أو النهر,crossed,Verb,All_Regions,Colloquial,Lexicon_Project,عبرنا الشط بالبلم الصغير العصر
+462,طشّر,بعثر / فرّق الأغراض,scattered / dispersed,Verb,All_Regions,Colloquial,Lexicon_Project,الجهال طشّروا الأوراق مالت الدفتر بالصالة
+463,لم,جمع الأغراض المبعثرة,gathered / collected,Verb,All_Regions,Colloquial,Lexicon_Project,لم الغراض مالتك وحطها بالجنطة بسرعة
+464,ضم,خبأ / حفظ الشيء في مكان آمن,hid / saved,Verb,All_Regions,Colloquial,Lexicon_Project,ضميت الفلوس بالجزدان مالت الوالدة
+465,باوعت,نظرت (للمتكلم),I looked,Verb,Central_and_South,Colloquial,Lexicon_Project,باوعت على السبورة بس ما لحكت اكتب المحاضرة
+466,سمع,أصغى للصوت,heard / listened,Verb,All_Regions,Colloquial,Lexicon_Project,سمعت السالفة كاملة من أستاذ القسم اليوم
+467,شم,استنشق الرائحة,smelled,Verb,All_Regions,Colloquial,Lexicon_Project,شميت ريحة رازقي تخبل بالحوش مالتنا
+468,ضاگ,تذوق الطعام,tasted,Verb,All_Regions,Colloquial,Lexicon_Project,ضاگ مرگة البامية وقال عاشت إيدج يمة
+469,چوى,أحرق بالحرارة أو النار,burned / scorched,Verb,All_Regions,Colloquial,Lexicon_Project,استكان الچاي جان كلش حار وچوى إيدي
+470,قرصتني,لسعتني (حشرة),stung me / bit me,Verb,All_Regions,Colloquial,Lexicon_Project,البقّة قرصتني برجلية واني نايم بالسطح
+471,دعم,صدم بالسيارة,hit / crashed into,Verb,All_Regions,Colloquial,Lexicon_Project,سايق الكيا دعم التيل مالت الشارع بالخطأ
+472,فاتتني,ضاعت مني (فرصة أو وقت),I missed it,Verb,All_Regions,Colloquial,Lexicon_Project,فاتتني المحاضرة الأولى لأن التاكسي تأخر بالسيطرة
+473,لحگت,أدركت الشيء في الوقت المناسب,I made it / caught up,Verb,All_Regions,Colloquial,Lexicon_Project,الحمد لله لحگت على امتحانات نهاية السنة بآخر لحظة
+474,ونسني,أسعدني / سلّاني,entertained me,Verb,All_Regions,Colloquial,Lexicon_Project,الحجي وياك كلش ونسني وضيع التعب مالي
+475,غثني,أزعجني / كدّر خاطري,annoyed me / upset me,Verb,All_Regions,Colloquial,Lexicon_Project,تصرف هذا الولد السختچي كلش غثني اليوم
+476,قهرني,أحزنني بشدة,made me sad / broke my heart,Verb,All_Regions,Colloquial,Lexicon_Project,المنظر مالت الطفل اليبچي بالشارع قهرني حيل
+477,فرحني,أسعدني جداً,made me happy,Verb,All_Regions,Colloquial,Lexicon_Project,خبر قبول المساهم بالمشروع كلش فرحني وسهّل الشغل
+478,عاوني,ساعدني في العمل,helped me,Verb,All_Regions,Colloquial,Lexicon_Project,صديقي عاوني بجمع الكلمات وتدقيق الأمثلة اللغوية
+479,وزع,قسّم الأشياء على الحاضرين,distributed,Verb,All_Regions,Colloquial,Lexicon_Project,الدكتور وزع الدفاتر الامتحانية على الطلاب بالقاعة
+480,لمع,برق وأضاء,shined / gleamed,Verb,All_Regions,Colloquial,Lexicon_Project,الجام مالت الشباك لمع ورا ما غسلناه بالماي
+481,صگع,أصاب بالبرد الشديد أو الصدمة,froze / shocked,Verb,All_Regions,Colloquial,Lexicon_Project,الجو البارد بالليل صگعنا فد نوب فوگ السطح
+482,سحن,فرك أو آلم (تُقال للقلب من الحزن),crushed / ached,Verb,All_Regions,Colloquial,Lexicon_Project,حچي القهر سحن گلبي سحن وما قدرت أحجي شي
+483,ملخ,مزّق بقوة,tore apart / ripped,Verb,All_Regions,Colloquial,Lexicon_Project,البزونة ملخت جيس الصمون بحوافرها وشردت
+484,جر,سحب الشيء باتجاهه,pulled / dragged,Verb,All_Regions,Colloquial,Lexicon_Project,جر الكرسي مالت المكتب وقعد يكتب الكود ماله
+485,دفع,أبعد الشيء عنه بقوة,pushed,Verb,All_Regions,Colloquial,Lexicon_Project,دفع الباب حيل بس جان مقفول بالسويچ
+486,طب,دخل بلفظ عامي واسع الانتشار,entered (colloquial),Verb,All_Regions,Colloquial,Lexicon_Project,طب الولد للحوش وصاح يمة وين الغدا؟
+487,طلعنا,خرجنا (للمتكلمين),we went out,Verb,All_Regions,Colloquial,Lexicon_Project,طلعنا للسوگ أول بارحة واشترينا غراض جديدة للبيت
+488,شفت,رأيت,I saw,Verb,All_Regions,Colloquial,Lexicon_Project,شفت خوش خطاط كاتب لافتة القسم بشكل يخبل
+489,سمعنا,أصغينا (للمتكلمين),we heard,Verb,All_Regions,Colloquial,Lexicon_Project,سمعنا أخبار زينة بخصوص المنحة الدراسية بالخارج
+490,عرفت,علمت وأدركت,I knew / recognized,Verb,All_Regions,Colloquial,Lexicon_Project,عرفت حل المسألة النحوية ورا ما راجعت الكتاب زين
+491,جهلت,لم أعلم بالشيء,I didn't know / ignored,Verb,All_Regions,Colloquial,Lexicon_Project,أنا جهلت موعد المحاضرة الشفهية ومحد خابرني دزلي خبر
+492,فهمت,استوعبت الفكرة,I understood,Verb,All_Regions,Colloquial,Lexicon_Project,فهمت الشرح مالت الـ GitHub وبديت اضيف المتعاونين
+493,تيهت,أضعت الطريق أو الفكرة,I got lost,Verb,All_Regions,Colloquial,Lexicon_Project,تيهت الدربونة مالت بيتكم لأن الغبار جان عجاج اليوم
+494,لكينا,وجدنا (للمتكلمين),we found,Verb,All_Regions,Colloquial,Lexicon_Project,لكينا المگص الضايع بنص الخانة مالت الميز الكبيرة
+495,ضيعت,أفقدت الشيء من يدي,I lost (something),Verb,All_Regions,Colloquial,Lexicon_Project,ضيعت قلم رصاص مالي بنادي الكلية بنص الهوسة
+496,تذكرت,استرجعت الذكريات,I remembered,Verb,All_Regions,Colloquial,Lexicon_Project,تذكرت السالفة القديمة وضحكنا عليها حيل بالحوش
+497,نسيت,غاب عن بالي الشيء,I forgot,Verb,All_Regions,Colloquial,Lexicon_Project,نسيت الشاحنة مالت الموبايل بالقسم مالتنا اليوم
+498,سجلت,دونت الاسم أو البيانات,I registered / recorded,Verb,All_Regions,Colloquial,Lexicon_Project,سجلت الكلمات الجديدة بملف الـ README المفتوح
+499,مسحت,أزلت الإدخال,I erased / wiped,Verb,All_Regions,Colloquial,Lexicon_Project,مسحت السطر المكرر من جدول المعجم حتى يتعدل الكود
+500,كتبت,دونت بالقلم أو الكيبورد,I wrote,Verb,All_Regions,Colloquial,Lexicon_Project,كتبت مكتوب شكر رسمي للأستاذ المشرف على بحثي
+501,صوبة نفطية,مدفأة تعمل بوقود الكيروسين,kerosene heater,Noun,All_Regions,Colloquial,Lexicon_Project,ترسنا الصوبة نفطية حتى تدفي الصالة بالليل
+502,پرده,ستارة الغرفة (لفظ ذو أصل فارسي),curtain,Noun,All_Regions,Colloquial,Lexicon_Project,علقنا پرده جديدة لونها نيلي بغرفة الخطار
+503,مخدرة,وعاء تخدير الشاي أو وصف لـه,tea-brewing pot / brewed,Noun / Adj,All_Regions,Colloquial,Lexicon_Project,قوري الچاي عفته على الطباخ حتة يطلع مخدرة وزين
+504,سماور,وعاء روسي تراثي لغلي الماء والشاي,samovar,Noun,All_Regions,Colloquial,Lexicon_Project,شغلنا السماور ب ديوانية العشيرة والتموا الأصدقاء
+505,منقلة,وعاء معدني لعمل الفحم والشواء,charcoal brazier,Noun,All_Regions,Colloquial,Lexicon_Project,حطينا الفحم بالمنقلة حتى نسوي كباب عراقي معدل
+506,مهفة,مروحة يدوية تصنع من خوص النخيل,woven palm leaf fan,Noun,All_Regions,Colloquial,Lexicon_Project,الكهرباء انطفت فد نوب وجبت المهفة أهفي للوالد
+507,لالة,مصباح نفطي تراثي قديم,antique oil lamp,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الجد يحتفظ ب لالة قديمة من أيام زمان بالحوش
+508,فانوس,مصباح إضاءة متنقل بالنفط,lantern,Noun,All_Regions,Colloquial,Lexicon_Project,شغلنا الفانوس بالبستان من جان الجو ضلمة كلش
+509,لكن,وعاء معدني كبير لغسل الملابس,large washbasin,Noun,All_Regions,Old_Colloquial,Lexicon_Project,ترسنا اللكن ماي وصابون حتى نغسل غراض الشغل
+510,تشت,طشت / وعاء الغسيل البلاستيكي أو المعدني,washbowl / tub,Noun,All_Regions,Colloquial,Lexicon_Project,حط الهدوم المبهذلة بنص التشت حتى نغسلها باجر
+511,شاش,قماش طبي خفيف أو نسيج رقيق,gauze / cheesecloth,Noun,All_Regions,Colloquial,Lexicon_Project,لفينا البرغي برقعة من الشاش حتى يثبت بالحايط
+512,بندورة,طماطم (لفظ يقل استخدامه أمام طماطة),tomato (variant),Noun,Northern_Iraq,Colloquial,Lexicon_Project,أهل الموصل يصيحون للطماطة بندورة أحياناً
+513,طماطة,ثمرة الطماطم بالشائعة العراقية,tomato,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت كيلوين طماطة وبتيتة من سوگ العزيزية
+514,بتيتة,بطاطا,potato,Noun,All_Regions,Colloquial,Lexicon_Project,سوينا بتيتة مقلية ويا العشا وطلعت كلش طيبة
+515,بصل,ثمرة البصل المعروفة,onion,Noun,All_Regions,Colloquial,Lexicon_Project,ثرامنا البصل حتة نحطه فوق مرگة الفاصوليا الحارة
+516,ثوم,نبات الثوم ذو الرائحة القوية,garlic,Noun,All_Regions,Colloquial,Lexicon_Project,الثوم مفيد حيل للصحة بس ريحته تبق ب المطبخ
+517,رگي,بطيخ أحمر كبير,watermelon,Noun,All_Regions,Colloquial,Lexicon_Project,الرگي البارد بالصيف يبل الگلب ويريحه ورا الشغل
+518,بطيخ,شمام (البطيخ الأصفر بالعراق),melon,Noun,All_Regions,Colloquial,Lexicon_Project,قصينا بطيخ أصفر ريحته طيبة وترسنا الماعون منه
+519,عنب,ثمار العنب,grapes,Noun,All_Regions,Colloquial,Lexicon_Project,البستان مالتنا بيه خوش عنب كمالي ورازقي شامخ
+520,رومّان,رمان بلغة القلب واللفظ الدارج,pomegranate,Noun,All_Regions,Colloquial,Lexicon_Project,الرومّان مالت شهربان مشهور بطعمه الحامض حلو
+521,عرموط,كمثرى,pear,Noun,All_Regions,Colloquial,Lexicon_Project,العرموط نزل بالسوگ اليوم بس السعر ماله غالي شوية
+522,رشته,نوع من المعكرونة التراثية أو العجين,handmade noodles,Noun,All_Regions,Old_Colloquial,Lexicon_Project,بيبية طبخت لنا رشته بالعدس جانت أكلة فد شي دافي
+523,كليچة,معجنات عراقية تقليدية للمناسبات للأعياد,Kleicha (traditional pastry),Noun,All_Regions,Colloquial,Lexicon_Project,الوالدة سوت كليچة ب التمر والسمسم ريحتها ترست الحوش
+524,دهين,حلوى النجف التقليدية بالدهن الحر,Daheen (traditional sweet),Noun,Central_and_South,Colloquial,Lexicon_Project,الوالد جاب لنا ماعون دهين أبو الهيل ويا الجية ماله
+525,مسگوف,طريقة شوي السمك العراقي الشهيرة على الحطب,Masgouf (grilled fish),Noun,All_Regions,Colloquial,Lexicon_Project,سوينا سمك مسگوف على شط دجلة بالجمعة وعزمنا الأصدقاء
+526,زوري,نوع من السمك الصغير الشائع بنهر دجلة,small river fish (Zouri),Noun,All_Regions,Colloquial,Lexicon_Project,صدنا سمك زوري هواية بالشبكة من الصبح ورا الفجر
+527,شبچة,شبكة الصيد أو شبكة الإنترنت بلفظ عامي,net / network,Noun,All_Regions,Colloquial,Lexicon_Project,شبچة النت اليوم تعبانة وكلش بطيئة برفع الملفات
+528,فالة,أداة سومرية قديمة متعددة الرؤوس لصيد السمك,traditional fishing spear,Noun,Southern_Iraq,Colloquial,Lexicon_Project,أهل الهور يستخدمون الفالة لصيد السمت بنص المشحوف
+529,شص,صنارة الصيد الصغيرة,fishhook,Noun,All_Regions,Colloquial,Lexicon_Project,ربطت الشص بالخيط القوي وذبيته بنص الشط العميق
+530,ميرغ,مجرى مائي صغير بالسقي أو بلفظ زراعي,small irrigation ditch,Noun,Southern_Iraq,Colloquial,Lexicon_Project,المزارع حفر ميرغ صغير حتة يوصل الماي للنخلات
+531,كرّاب,حرث الأرض أو المزارع الذي يحرث,plowing / plower,Noun,All_Regions,Colloquial,Lexicon_Project,وكت الكرّاب يبدأ قبل موسم المطر حتة الكاع تلين
+532,مسحاة,مجرفة يدوية زراعية حديدية,shovel / spade,Noun,All_Regions,Colloquial,Lexicon_Project,الزم المسحاة واعدل الساقية مالت الحديقة عيني
+533,منجل,أداة حديدية مقوسة لقطع الحشيش والزرع,sickle,Noun,All_Regions,Colloquial,Lexicon_Project,الحصاد استخدم المنجل الحاد لحش البردي والقصب بالهور
+534,شبلة,فسيلة النخل الصغيرة الجديدة,palm offshoot / sapling,Noun,All_Regions,Colloquial,Lexicon_Project,زرعنا شبلة نخل جديدة بالحديقة مالت البيت أول بارحة
+535,شيص,النسيج التمري غير الملقح رديء الطعم,unpollinated dates (Shiç),Noun,All_Regions,Colloquial,Lexicon_Project,النخلة مالت الفرع طلعت شيص لأن محد لقحها الوكت الفات
+536,نوّاية,نواة التمر أو الفاكهة,date seed / pit,Noun,All_Regions,Colloquial,Lexicon_Project,بلعت النوّاية مالت التمرة بالخطأ واني اكل سريع
+537,فص,نواة صغيرة أو قطعة (فص ثوم مثلاً),clove / pit,Noun,All_Regions,Colloquial,Lexicon_Project,حط فص ثوم واحد بالمرگة يعطيها نكهة كلش طيبة
+538,قشر,الغلاف الخارجي للفاكهة أو الخضار,peel / shell,Noun,All_Regions,Colloquial,Lexicon_Project,شيل قشر البطيخ واذبه بالجيس مالت الغراض الزايدة
+539,سلة مهملات,وعاء لرمي النفايات الزائدة,trash can,Noun,All_Regions,Colloquial,Lexicon_Project,حط الأوراق المبهذلة والمشگوگة بنص سلة المهملات
+540,مزبلة,مكان تجميع النفايات الكبيرة,dumpster / landfill,Noun,All_Regions,Colloquial,Lexicon_Project,البلدية شالت الغراض القديمة وودتها للمزبلة الخارجية
+541,خرابة,مكان مهجور مهدوم الحوائط,ruin / abandoned place,Noun,All_Regions,Colloquial,Lexicon_Project,البيت القديم بالدربونة صار خرابة وتسكن بيه البزازين
+542,بوم,طائر البوم (يُضرب به المثل بالشؤم العامي),owl,Noun,All_Regions,Colloquial,Lexicon_Project,ليش وجهك مبهذل ومثل البوم؟ اضحك عيني شكو ماكو؟
+543,بلبل,طائر البلبل العراقي الشهير بتغريده,bulbul / nightingale,Noun,All_Regions,Colloquial,Lexicon_Project,البلبل مالتنا يقرد بالقفص ماله من الصبح بنص الطارمة
+544,قفص,محبس الطيور المصنوع من السلك أو الخوص,cage,Noun,All_Regions,Colloquial,Lexicon_Project,افتح باب القفص وخلي البلبل يطير فوگ النخل الشامخ
+545,سياج,سور الحديقة أو الكلية الحديدي أو الطيني,fence / boundary,Noun,All_Regions,Colloquial,Lexicon_Project,الطلاب وگفوا يم سياج الكلية ينتظرون خط النقل يوصل
+546,باب رسمي,البوابة الرئيسية الرسمية للمؤسسة,main gate,Noun,All_Regions,Colloquial,Lexicon_Project,العميد فات من الباب رسمي مالت الكلية الساعة ب الثمانية
+547,حارس,خفير الأمن المكلف بالحماية,guard / watchman,Noun,All_Regions,Colloquial,Lexicon_Project,الحارس لزم الهوية مالتي ودقق الاسم الثلاثي قبل ما افوت
+548,استعلامات,مكتب استقبال المراجعين والزوار,information desk / reception,Noun,All_Regions,Colloquial,Lexicon_Project,سلمت طلب طلب الإجازة ب غرف الاستعلامات مالت الكلية
+549,معاملة,الإجراءات الورقية الرسمية بالدولة,official paperwork,Noun,All_Regions,Colloquial,Lexicon_Project,المعاملة مالت وثيقة التخرج تطلب فد كوما وقت ولغوة
+550,عريضة,ورقة طلب رسمي يكتبها العارض,petition / formal request,Noun,All_Regions,Colloquial,Lexicon_Project,كتبت عريضة للقسم حتة يوافقون على مشروع المعجم اللغوي
+551,قانوني,مطابق للتعليمات والأحكام الرسمية,legal / lawful,Adj,All_Regions,Colloquial,Lexicon_Project,هذا الإجراء قانوني ومابيه أي لغوة أو مشكلة بالكلية
+552,ممنوع,محظور ولا يجوز فعله فد نوب,forbidden / prohibited,Adj,All_Regions,Colloquial,Lexicon_Project,ممنوع تدخين الجگاير بنص القاعات الامتحانية عيني
+553,جگارة,سيجارة,cigarette,Noun,All_Regions,Colloquial,Lexicon_Project,الولد طفى الجگارة مالتة قبل ما يطّب لغرفة الأستاذ
+554,مطفأة,وعاء رمي رماد السجائر,ashtray,Noun,All_Regions,Colloquial,Lexicon_Project,حط رماد الجگارة بنص المطفأة الموجودة فوق الميز
+555,دخان,العادم المتصاعد من النار أو السجائر,smoke,Noun,All_Regions,Colloquial,Lexicon_Project,دخان المولدات ترس الصالة وخنقنا فد نوب سد الشباك
+556,صوبة نفط,مدفأة الكيروسين بلفظ آخر شائع,kerosene heater (variant),Noun,All_Regions,Colloquial,Lexicon_Project,شغل صوبة نفط لأن الدنيا باردة وعوزنا فد شوية دفا
+557,بطانية,غطاء النوم الثقيل المصنوع من الصوف,blanket,Noun,All_Regions,Colloquial,Lexicon_Project,شيل البطانية النظيفة وحطها فوق الدوشق مالت الجرباية
+558,مخدة,وسادة الرأس عند النوم,pillow,Noun,All_Regions,Colloquial,Lexicon_Project,المخدة مالت النوم مالتي كلش ناعمة ومريحة ومعدلة
+559,لحاف,غطاء سميك مبطن بالقطن للنوم الشتوي,duvet / quilt,Noun,All_Regions,Colloquial,Lexicon_Project,تغطيت باللحاف الكبير لأن صوبة علاء الدين انطفت بالليل
+560,حلم,الرؤيا أثناء النوم بالليل,dream,Noun,All_Regions,Colloquial,Lexicon_Project,شفت خوش حلم البارحة عبالي تخرجنا وخذينا المنحة الدراسية
+561,گرايب,أقارب / صلة الرحم,relatives,Noun,All_Regions,Colloquial,Lexicon_Project,اليوم جونا كرايبنا من محافضات الجنوب بالحوش
+562,نسابة,أصهار / علاقة زواج,in-laws,Noun,All_Regions,Colloquial,Lexicon_Project,صاروا نسابتنا وعقدنا العزم على خوش مصاهرة
+563,عشيرة,قبيلة / عائلة ممتدة,tribe / clan,Noun,All_Regions,Colloquial,Lexicon_Project,شيوخ العشيرة التموا بالديوانية لحل السالفة
+564,فصل,جلسة عشائرية للصلح أو دية,tribal settlement / compensation,Noun,All_Regions,Colloquial,Lexicon_Project,قعدوا عگب باجر يسوون فصل للحادث مالت الكيا
+565,عطوة,هدنة عشائرية مؤقتة,temporary tribal truce,Noun,All_Regions,Colloquial,Lexicon_Project,أخذنا عطوة مالت شهر لحد ما يطيب الولد المورط
+566,سالفة حصاد,قصة قديمة أو وقت الحصاد التراثي,harvest story / season,Noun,All_Regions,Old_Colloquial,Lexicon_Project,الجد سولف لنا سالفة حصاد قديمة بأيام نخل البصرة
+567,شالوا,رحلوا وانتقلوا من المكان,they moved out,Verb,All_Regions,Colloquial,Lexicon_Project,الجيران شالوا البارحة ودزوا لنا مكتوب توديع
+568,تلاگينا,التقينا بوجه بعض,we met face to face,Verb,All_Regions,Colloquial,Lexicon_Project,تلاگينا ويا الأستاذ بممر الكلية وسلمنا عليه
+569,تطشرنا,تفرقنا في أماكن شتى,we dispersed / scattered,Verb,All_Regions,Colloquial,Lexicon_Project,ورا المحاضرة الأخيرة تطشرنا كل واحد راحت لبيته
+570,التمينا,اجتمعنا في مكان واحد,we gathered / assembled,Verb,All_Regions,Colloquial,Lexicon_Project,التمينا بنادي الكلية حتى نراجع مادة النحو سوية
+571,استبراد,إصابة بالزكام من البرد,catching a cold,Noun,All_Regions,Colloquial,Lexicon_Project,عندي استبراد قوي ومقدرت اطلع من الجرباية الصبح
+572,منشول,مصاب بالزكام والرشح,having a runny nose / sick,Adj,All_Regions,Colloquial,Lexicon_Project,الولد منشول حيل لا تخلوه يشرب كلاص ماي بارد
+573,صخونة,حمى / ارتفاع درجة الحرارة,fever,Noun,All_Regions,Colloquial,Lexicon_Project,الطفل بيه صخونة قوية من ورا قرصة البقة البارحة
+574,وجع,ألم,pain / ache,Noun,All_Regions,Colloquial,Lexicon_Project,عندي وجع براسي من كثرة الحچي واللغوة بالقسم
+575,طاب,شُفي وتعافى من المرض,he recovered / healed,Verb,All_Regions,Colloquial,Lexicon_Project,الحمد لله أخويا طاب وطلع يتمشى بالحديقة مالتنا
+576,مستوصف,مركز صحي حكومي صغير,health clinic,Noun,All_Regions,Colloquial,Lexicon_Project,رحت للمستوصف أخذت بنگج موضعي لسنّي العورني
+577,إسعاف,سيارة نقل المرضى الطارئة,ambulance,Noun,All_Regions,Colloquial,Lexicon_Project,صوت الإسعاف جان عالي بالدرب بره السيطرة
+578,صيدلية,مكان بيع الأدوية,pharmacy,Noun,All_Regions,Colloquial,Lexicon_Project,اشتريت شاش وإبرة طبية من الصيدلية الجوانية
+579,دوا,دواء,medicine,Noun,All_Regions,Colloquial,Lexicon_Project,اخذ الدوا مالتك عيني ورا اكل الصمون والتدفئة
+580,حبوب,أقراص الدواء العلاجية,pills / tablets,Noun,All_Regions,Colloquial,Lexicon_Project,بلعت حبة وحدة من حبوب الوجع وراحت الصخونة
+581,شربت,عصير محلى أو دواء سائل,syrup / juice,Noun,All_Regions,Colloquial,Lexicon_Project,صبلي كلاص شربت زبيب بارد يريح الگلب
+582,تيزاب,حمض الكبريتيك / مادة حارقة قوية,acid,Noun,All_Regions,Colloquial,Lexicon_Project,احذر من التيزاب لا يوقع على الهدوم ويملخها
+583,نفط أسود,زيت الوقود الثقيل للتدفئة أو المعامل,heavy fuel oil,Noun,All_Regions,Colloquial,Lexicon_Project,المعامل تشتغل بالنفط أسود ويطلع دخان كوما
+584,غاز,وقود الغاز المنزلي,cooking gas,Noun,All_Regions,Colloquial,Lexicon_Project,قنينة الغاز خلصت بنص طبخ مرگة البامية اليوم
+585,فحم,الفحم المستخدم للشواء والتدفئة,charcoal,Noun,All_Regions,Colloquial,Lexicon_Project,شغل الفحم بالمنقلة وخلي الهوا يفتر عليه زين
+586,رماد,مخلفات الاحتراق الكاربونية,ash / soot,Noun,All_Regions,Colloquial,Lexicon_Project,نظف رماد الصوبة مالت النفط قبل ما تترسها نوب
+587,صخام الوجه,سواد رديء / وصف للعار أو المصيبة,soot of face / shame,Noun,All_Regions,Colloquial,Lexicon_Project,هذا الفعل سوا لنا صخام الوجه ومينحجي بيه فد نوب
+588,بياض,نور / صفاء أو بياض البيض,whiteness / clarity,Noun,All_Regions,Colloquial,Lexicon_Project,بياض الورقة مالت الدفتر يخلي الخط الجاف واضح
+589,حمار,اللون الأحمر بلفظ عامي أو حيوان الحمار,redness / donkey,Noun,All_Regions,Colloquial,Lexicon_Project,حمار الشمس وكت الغروب فوق الشط منظر يخبل
+590,صفار,اللون الأصفر,yellowness,Noun,All_Regions,Colloquial,Lexicon_Project,صفار خلال النخل يبين بالبساتين بشهر السابع دوم
+591,خضار,اللون الأخضر أو النباتات والزرع,greenery / vegetables,Noun,All_Regions,Colloquial,Lexicon_Project,خضار الكاع مالت العزيزية يفتح العين ويفرح الخاطر
+592,بستان,أرض زراعية واسعة للأشجار,orchard / farm,Noun,All_Regions,Colloquial,Lexicon_Project,رحنا للبستان جنينا رطب وخلال من النخل الشامخ
+593,فلاّح,مزارع يقوم على خدمة الأرض,farmer,Noun,All_Regions,Colloquial,Lexicon_Project,الفلاّح الزم المسحاة وفتح الميرغ يسقي الشبلة الجديدة
+594,سرگية,حبل مصنوع من ليف النخيل للربط,palm fiber rope,Noun,Southern_Iraq,Old_Colloquial,Lexicon_Project,ربطنا گونية التمن ب سرگية قوية حتة لا تنفتح
+595,ليفة,إسفنج الخياطة أو ليف النخيل للغسل,loofah / palm fiber,Noun,All_Regions,Colloquial,Lexicon_Project,غسلت الجدورة ب ليفة زينة راحت الدهون كلها
+596,سدر,نبات النبق العراقي التراثي,Ziziphus trees / Sidr,Noun,All_Regions,Colloquial,Lexicon_Project,شجرة السدر حركت غصنها ويمها وگفت فد بزونة صغيرة
+597,نبگ,ثمر شجر السدر الصغير الطيب,Jujube / Nabkh,Noun,All_Regions,Colloquial,Lexicon_Project,لمينا نبگ حلو من الكاع ترسنا الماعون مالتنا
+598,خستـاوي,نوع شهير وممتاز من التمر العراقي,Khastawi dates,Noun,All_Regions,Colloquial,Lexicon_Project,هذا التمر خستـاوي معدل وطعمه يذوب بالحلق ذوب
+599,زهدي,النوع الأكثر شيوعاً وضخامة بالتمر العراقي,Zahdi dates,Noun,All_Regions,Colloquial,Lexicon_Project,لمينا كوما أكياس من تمر زهدي مالت الكرّاب الفات
+600,برحي,أفضل وأنعم أنواع التمر نضارة وحلاوة,Barhi dates,Noun,All_Regions,Colloquial,Lexicon_Project,الرطب البرحي نزل بالسوگ والناس تشتري منه بلاش
+601,صيفية,وصف للأغراض أو الأجواء الصيفية,summery,Adj,All_Regions,Colloquial,Lexicon_Project,لبسنا الهدوم الصيفية الخفيفة لأن الجو صار عجاج وحار
+602,شتوية,وصف للأغراض أو الأجواء الشتوية,wintry / winter clothes,Adj / Noun,All_Regions,Colloquial,Lexicon_Project,طلعنا غطاء لحاف وبطانية شتوية ثقيلة من الخزانة
+603,مطرية,وصف للأجواء الماطرة أو مظلة المطر,rainy / umbrella,Adj / Noun,All_Regions,Colloquial,Lexicon_Project,الغيوم ترسوا السما والدنيا صارت مطرية فد نوب
+604,غيمة,سحابة محملة بالماء في السماء,cloud,Noun,All_Regions,Colloquial,Lexicon_Project,اكو غيمة سوداء جبيرة فوگ شط دجلة راح تمطر
+605,برق,الوميض الضوئي بالسماء وكت المطر,lightning,Noun,All_Regions,Colloquial,Lexicon_Project,البرق لمع بالسماء وصار صوت رعد قوي خوف الجهال
+606,رعد,الصوت المتصاعد من السحب بالمطر,thunder,Noun,All_Regions,Colloquial,Lexicon_Project,سمعنا رعد قوي ورش المطر على حايط الغرفة بره
+607,ندى,قطرات الماء الصباحية فوق النبات,dew,Noun,All_Regions,Colloquial,Lexicon_Project,قطرات الندى نازلة فوق شجرة الرازقي من الصبح
+608,فجرية,وقت الفجر الباكر جداً,dawn / early morning,Noun,All_Regions,Colloquial,Lexicon_Project,گعدت فجرية غسلت وجهي وطلعت الحق على السايق مالي
+609,غبشة,وقت الغسق الباكر قبل شروق الشمس بقليل,crack of dawn,Noun,Central_and_South,Colloquial,Lexicon_Project,طلع الفلاّح للكرّاب بالغبشة من جان الجو بعده بارد
+610,مغربية,وقت صلاة المغرب أو الغروب,sunset / evening,Noun,All_Regions,Colloquial,Lexicon_Project,التمينا بالحوش المغربية نشرب استكان چاي مهيل وسنغين
+611,عشاوية,وقت العشاء بالليل,nighttime / dinner time,Noun,All_Regions,Colloquial,Lexicon_Project,سوينا عراضة بالديوانية العشاوية وجونا كوما مساهمين
+612,نص الليل,منتصف الليل المتأخر,midnight,Noun,All_Regions,Colloquial,Lexicon_Project,سمعت صوت چكجكة بالباب بنص الليل وطلعت اشوف شكو
+613,ظهرية,وقت الظهر القائظ بالصيف,noon / afternoon,Noun,All_Regions,Colloquial,Lexicon_Project,شغل المكيف الظهرية الدنيا حارة وتموع الروح فد نوب
+614,عصرية,وقت العصر الهادئ,late afternoon,Noun,All_Regions,Colloquial,Lexicon_Project,كعدت العصرية على الكنبة اقرأ كتاب الإنجليزي مالي
+615,ساعة بالثنتين,تحديد التوقيت (الساعة الثانية),two o'clock,Phrase,All_Regions,Colloquial,Lexicon_Project,المحاضرة الشفهية مالتنا تبدأ الساعة بالثنتين الظهر
+616,توقيت,تحديد الزمن,timing,Noun,All_Regions,Colloquial,Lexicon_Project,التوقيت مالت امتحانات نهاية السنة كلش مناسب ومعدل
+617,تأخيرة,وصف لحالة فوات الوقت أو التباطؤ,delay,Noun,All_Regions,Colloquial,Lexicon_Project,صارت عندنا تأخيرة بالخط مالت الكيا بسبب السيطرة
+618,عجلة,إسراع / أو عجلة البايسكل حسب السياق,hurry / wheel,Noun,All_Regions,Colloquial,Lexicon_Project,اطلع ب عجلة عيني حتة تلحق على باب الكلية الرئيسي
+619,على كيفك,تمهل وافعل الأمر بهدوء,take your time / slowly,Phrase,All_Regions,Colloquial,Lexicon_Project,امشي على كيفك بالدرب المبهذل لا توكع وتتصلح
+620,على سريع,بسرعة فائقة وبدون تأخير,quickly / fast,Phrase,All_Regions,Colloquial,Lexicon_Project,اكتب الكود على سريع ودزه للمتعاون يراجع البيانات
+621,مستعجل,شخص يمر بحالة إسراع للوقت,in a hurry,Adj,All_Regions,Colloquial,Lexicon_Project,أنا مستعجل كلش هسه وعندي غراض لازم اوديها للبيت
+622,متأخر,من فاته الوقت المحدد,late,Adj,All_Regions,Colloquial,Lexicon_Project,الطالب المتأخر العميد منعه من دخول القاعة الامتحانية
+623,گايد,يقود الشي أو مسيطر (أو حبل الدابة بالتراث),leading / guide,Adj / Noun,All_Regions,Colloquial,Lexicon_Project,المشروع مالتنا گايد بكل مستودعات الـ NLP العراقية
+624,تابع,ملحق بـ أو من يسير خلف فكرة,follower / sub-module,Noun / Adj,All_Regions,Colloquial,Lexicon_Project,هذا المجلد تابع للملف الرئيسي مالت قاعدة البيانات
+625,مستودع,مكان الخزن أو الـ Repository في GitHub,repository / storehouse,Noun,All_Regions,Colloquial,Lexicon_Project,افتح مستودع الكوربوس وسوي إضافة لشخص مساهم وياك
+626,تعديل برمي,إجراء تصحيح على كود أو ملف رقمي,code commit / edit,Noun,All_Regions,Colloquial,Lexicon_Project,سويت فد تعديل برمي على ملف الـ README وتعدل الوصف
+627,ربط رقمي,توصيل الحسابات أو البرامج بالإنترنت,digital link / integration,Noun,All_Regions,Colloquial,Lexicon_Project,الربط الرقمي مالت الموقع يسهل فلترة الجمل والكلمات
+628,حساب مفتوح,ملف بروفايل عام أو مجاني بالإنترنت,open account / profile,Noun,All_Regions,Colloquial,Lexicon_Project,سويت حساب مفتوح على منصة GitHub حتة أرفع الأبحاث
+629,مجلد رئيسي,الفولدر الأساسي للخزن في اللابتوب,root directory / folder,Noun,All_Regions,Colloquial,Lexicon_Project,حط كل ملفات المعجم والقاموس بنص مجلد رئيسي واحد
+630,ملف نصوص,مستند النص البرمجي txt أو md,text file,Noun,All_Regions,Colloquial,Lexicon_Project,انقل الأسطر مالت الـ 100 كلمة داخل ملف نصوص نظيف
+631,خطأ كود,علة برمجة تمنع تشغيل البرنامج,syntax error / bug,Noun,All_Regions,Colloquial,Lexicon_Project,طلع عندي خطأ كود بالسطر الخمسين وسويت له تصليح
+632,تدقيق جمل,فحص التراكيب اللغوية للتأكد من رصانتها,sentence annotation / checking,Noun,All_Regions,Colloquial,Lexicon_Project,صديقي قعد يسوي تدقيق جمل واقترح امثلة من الدارجة
+633,ترجمة حرة,نقل المعنى بدون التزام حرفي بالكلمات,free translation,Noun,All_Regions,Colloquial,Lexicon_Project,سوينا ترجمة حرة للتعابير الاصطلاحية العراقية بالإنجليزية
+634,وصف أكاديمي,صياغة رسمية للأدوار والمهام البحثية,academic description,Noun,All_Regions,Colloquial,Lexicon_Project,كتبنا وصف أكاديمي لجهود المساهمين يظهر أمام لجنة المنح
+635,منحة دراسية,مقعد دراسي مجاني ممول بالخارج,academic scholarship,Noun,All_Regions,Colloquial,Lexicon_Project,التقديم على منحة دراسية يطلب مشروع متميز وموثق برمجياً
+636,لجنة تحكيم,مجموعة الأساتذة المقيمين للطلبات,review board / jury,Noun,All_Regions,Colloquial,Lexicon_Project,لجنة تحكيم المنحة راح تشوف المستودع وتقيم العمل الجماعي
+637,وثيقة تخرج,الشهادة الرسمية ببيان الدرجات والمعدل,graduation certificate / transcript,Noun,All_Regions,Colloquial,Lexicon_Project,استلمت وثيقة تخرج مالتي من غرف التسجيل بالكلية اليوم
+638,براءة ذمة,مستند رسمي يثبت خلو الطالب من التزامات الكلية,clearance document,Noun,All_Regions,Colloquial,Lexicon_Project,وقعت براءة ذمة من المكتبة ومن القاعة وممنوع التأخير
+639,طلب رسمي,ورقة عريضة تقدم للجهات الإدارية بالدولة,formal application,Noun,All_Regions,Colloquial,Lexicon_Project,قدمت طلب رسمي للعميد بخصوص تمديد وكت بحوث التخرج
+640,تأييد استمرار,وثيقة تثبت مداومة الطالب بالكلية الحالية,enrollment certificate,Noun,All_Regions,Colloquial,Lexicon_Project,طلعت تأييد استمرار بالدوام حتة اقدمه لخط النقل المشترك
+641,هوسة طلاب,زحام وصخب الطلبة بالممرات أو النادي,student crowd,Noun,All_Regions,Colloquial,Lexicon_Project,اكو هوسة طلاب كبيرة بالساحة لأن اليوم آخر يوم امتحانات
+642,ممر القسم,الدهليز الواصل بين غرف الأساتذة والقاعات,department hallway,Noun,All_Regions,Colloquial,Lexicon_Project,وگفنا بممر القسم ننتظر الدكتور ينزل يوزع الأوراق مالتنا
+643,لوحة إعلانات,المكان المخصص لتعليق جداول الامتحانات والتبليغات,bulletin board,Noun,All_Regions,Colloquial,Lexicon_Project,شوف لوحة إعلانات الكلية حتة تعرف موعد المناقشة الشفهية
+644,شعبة التسجيل,الغرفة الإدارية المسؤولة عن ملفات الطلاب والوثائق,registrar office,Noun,All_Regions,Colloquial,Lexicon_Project,وديت الصور الشخصية لشعبة التسجيل حتة يكملون معاملة الوثيقة
+645,مكتبة الكلية,المكان المخصص للمطالعة واستعارة المصادر الأدبية,college library,Noun,All_Regions,Colloquial,Lexicon_Project,لقيت خوش مصادر عن الأدب الفيكتوري بنص مكتبة الكلية اليوم
+646,بحث تخرج,المشروع الأكاديمي النهائي لنيل شهادة البكالوريوس,graduation thesis,Noun,All_Regions,Colloquial,Lexicon_Project,بحث تخرج مالي يركز على اللسانيات الحاسوبية وتطبيقات اللهجة
+647,مناقشة شفهية,اختبار الأساتذة للطالب وجهاً لوجه حول بحثه,oral defense,Noun,All_Regions,Colloquial,Lexicon_Project,المناقشة الشفهية جانت كلش رصينة والأستاذ مدح الكود مالي
+648,درجة كاملة,العلامة النهائية القصوى بالتقييم,full mark / grade,Noun,All_Regions,Colloquial,Lexicon_Project,الحمد لله خذيت درجة كاملة ب مادة النحو المقارن هالمرة
+649,ناجح,من اجتاز الاختبارات بنجاح وعبر للمرحلة التالية,passed / successful,Adj,All_Regions,Colloquial,Lexicon_Project,الاسم الثلاثي مالي طلع مكتوب بقائمة ناجح والكل باركولي
+650,مكمل,من رسب ب مادة أو مادتين وله حق الدور الثاني,having a makeup exam,Adj,All_Regions,Colloquial,Lexicon_Project,الولد السختچي طلع مكمل بثلاث مواد ولازم يدرس حيل بالصيف
+651,راسب,من لم يجتز العام الدراسي بسبب كثرة المواد الضعيفة,failed,Adj,All_Regions,Colloquial,Lexicon_Project,محد طلع راسب بالقسم مالتنا والنسبة جانت كلش زينة ومعدلة
+652,تخرجنا,أكملنا الدراسة الأكاديمية بنجاح ونلنا الشهادة,we graduated,Verb,All_Regions,Colloquial,Lexicon_Project,أخيراً تخرجنا وراح نسوي حفلة جبيرة بنص حوش البيت مالتنا
+653,حفلة تخرج,مراسيم الاحتفال بنهاية السنين الدراسية بالكلية,graduation ceremony,Noun,All_Regions,Colloquial,Lexicon_Project,لبسنا قاط رسمي ورباط وخذينا صور تذكارية ب حفلة تخرج مالتنا
+654,صورة جماعية,لقطة فوتوغرافية تجمع كل الأصدقاء والزملاء سوية,group photo,Noun,All_Regions,Colloquial,Lexicon_Project,أخذنا صورة جماعية مالت كل طلاب المرحلة مگابل سياج الكلية
+655,ذكرى طيبة,الأثر الحسن المتبقي بالقلب عگب الفراق,good memory,Noun,All_Regions,Colloquial,Lexicon_Project,سنين الدراسة بالجامعة راح تظل ذكرى طيبة بگلوبنا دوم إن شاء الله
+656,صديق العمر,الزميل المقرب جداً والمستمر بالوفاء لسنوات طويلة,lifelong friend,Noun,All_Regions,Colloquial,Lexicon_Project,أحمد هو صديق العمر واشتغلنا سوية على كود المعجم اللغوي مالتنا
+657,مستقبل معدل,الأيام القادمة الواعدة بالنجاح والوظيفة المرموقة,bright future,Noun,All_Regions,Colloquial,Lexicon_Project,إن شاء الله نطلع للمنحة ونسوي مستقبل معدل يفيد بلدنا وأهلنا
+658,توفيق من الله,التيسير الإلهي المصاحب للجهد والسعي الحثيث,success from God,Noun,All_Regions,Colloquial,Lexicon_Project,كل هذا الإنجاز الضخم بالـ Corpus هو فد توفيق من الله ودعاء الوالدة
+659,الحمد لله,تعبير الشكر والثناء لله عند إتمام النعم والمهام,praise be to God,Phrase,All_Regions,Colloquial,Lexicon_Project,الحمد لله كملنا رفع الكلمات والمستودع صار جاهز وموثق بالكامل
+660,نهاية الدفعة,خاتمة وجبة الإدخال المعجمي الحالية بالملف,end of batch,Noun,All_Regions,Colloquial,Lexicon_Project,وصلنا لـ نهاية الدفعة الحالية مالت الكلمات والجدول صار فد شي يخبل
