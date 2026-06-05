@@ -29,3 +29,53 @@ id,word,msa_equivalent,english_translation,pos,governorate,register,source,examp
 28,سختچي,كسول / متهرب,slacker / lazy,Adj,All_Regions,Slang,Lexicon_Project,عوف السختچية واقرا
 29,روزنامة,تقويم,calendar,Noun,All_Regions,Colloquial,Lexicon_Project,باوع على الروزنامة وشوف التاريخ
 30,ياخه,ياقة القميص,collar,Noun,All_Regions,Colloquial,Lexicon_Project,ياخه القميص وسخة
+11,عسما,أعسر / يستخدم اليد اليسرى,left-handed,Adj,All_Regions,Colloquial,Lexicon_Project,هو ولد عسما
+12,جا,إذن / أداة ربط,then / so,Adv,Southern_Iraq,Colloquial,Lexicon_Project,جا شفت شلون صار؟
+13,كلاش,حذاء تقليدي خفيف,traditional shoes,Noun,Northern_and_Kurdistan,Colloquial,Lexicon_Project,اشترى كلاش جديد
+14,مبين,ظاهر / واضح,apparent / obvious,Adj,All_Regions,Colloquial,Lexicon_Project,مبين عليك التعب اليوم
+15,فاهي,بلا طعم / عديم الحيوية,bland / tasteless,Adj,All_Regions,Colloquial,Lexicon_Project,الأكل فاهي ومابيه ملح
+16,لوگي,تملق / منافق,flatterer / sycophant,Adj,All_Regions,Slang,Lexicon_Project,ابتعد عن الشخص اللوگي
+17,وينك,أين أنت,where are you,Phrase,All_Regions,Colloquial,Lexicon_Project,وينك ما جيت البارحة؟
+18,قشمر,خدع / ضلل,deceived / fooled,Verb,All_Regions,Colloquial,Lexicon_Project,قشمر عليه بالحجي
+19,ميز,طاولة,table,Noun,All_Regions,Colloquial,Lexicon_Project,الكتب فوگ الميز
+20,بلكت,لعله / عسى,hopefully / maybe,Adv,All_Regions,Colloquial,Lexicon_Project,بلكت باكر يجي الفرج
+21,أدبز,قليل الأدب,rude / impolite,Adj,Central_and_South,Colloquial,Lexicon_Project,تصرف أدبز ومو حلو
+22,عبالي,ظننت / اعتقدت,I thought,Verb,All_Regions,Colloquial,Lexicon_Project,عبالي أنت رحت لجامعتك
+23,جرباية,سرير,bed,Noun,All_Regions,Colloquial,Lexicon_Project,الطفل نايم على الجرباية
+24,دشداشة,ثوب تقليدي,traditional robe,Noun,All_Regions,Colloquial,Lexicon_Project,لبس الدشداشة بالعيد
+25,حيل,كثيراً / بقوة,very much / strength,Adv,All_Regions,Colloquial,Lexicon_Project,تعبت حيل من المشي
+26,صوبة,مدفأة,heater,Noun,All_Regions,Colloquial,Lexicon_Project,شغل الصوبة الدنيا باردة
+27,كلش,جداً,very,Adv,All_Regions,Colloquial,Lexicon_Project,هذا الامتحان كلش سهل
+28,سختچي,كسول / متهرب,slacker / lazy,Adj,All_Regions,Slang,Lexicon_Project,عوف السختچية واقرا
+29,روزنامة,تقويم,calendar,Noun,All_Regions,Colloquial,Lexicon_Project,باوع على الروزنامة وشوف التاريخ
+30,ياخه,ياقة القميص,collar,Noun,All_Regions,Colloquial,Lexicon_Project,ياخه القميص وسخة
+31,أكو,يوجد,there is,Verb,All_Regions,Colloquial,Lexicon_Project,أكو أحد بالبيت؟
+32,ماكو,لا يوجد,there is not,Verb,All_Regions,Colloquial,Lexicon_Project,ماكو أي مشكلة هنا
+33,هسه,الآن,now,Adv,All_Regions,Colloquial,Lexicon_Project,هسه لازم نروح
+34,بعدين,فيما بعد,later,Adv,All_Regions,Colloquial,Lexicon_Project,نحكي بهذا الموضوع بعدين
+35,عوز,نقص / حاجة,lack / need,Noun,All_Regions,Colloquial,Lexicon_Project,ما عوزنا إلا المشاكل
+36,قندرة,حذاء,shoe,Noun,All_Regions,Colloquial,Lexicon_Project,نظف القندرة قبل ما تطلع
+37,خاتون,سيدة محترمة,lady,Noun,Central_Iraq,Colloquial,Lexicon_Project,الخاتون سوت شاي
+38,زقنبوت,سم / طعام بكراهية,poison / bitter food,Noun,All_Regions,Slang,Lexicon_Project,اكل زقنبوت وانجب
+39,طربكة,فوضى / ركض الخيل,chaos / galloping,Noun,All_Regions,Colloquial,Lexicon_Project,شنو هاي الطربكة بالشارع؟
+40,جقلمبة,شقلبة,somersault,Noun,All_Regions,Colloquial,Lexicon_Project,الطفل سوى جقلمبة على الفراش
+41,إيدام,مرق / غموس,stew / broth,Noun,Southern_Iraq,Colloquial,Lexicon_Project,اليوم الغدا تمن وإيدام
+42,صخام,رماد / مصيبة,soot / disaster,Noun,All_Regions,Colloquial,Lexicon_Project,صخام الصابني وش هالورطة
+43,دوشق,فراش النوم,mattress,Noun,All_Regions,Colloquial,Lexicon_Project,الدوشق كلش مريح
+44,بطران,مترف لا مبالي,carefree / spoiled,Adj,All_Regions,Colloquial,Lexicon_Project,أنت بطران تحجي بهيج وقت؟
+45,عركات,مشاجرات,fights,Noun,All_Regions,Colloquial,Lexicon_Project,عوف العركات واللغوة الزايدة
+46,طش,انتشر,spread,Verb,All_Regions,Colloquial,Lexicon_Project,الخبر طش بالمنطقة كلها
+47,سربت,تسكع / تهرب,slacked / wandered,Verb,All_Regions,Slang,Lexicon_Project,الولد يسربت بالشوارع
+48,مبهذل,غير مرتب,messy / untidy,Adj,All_Regions,Colloquial,Lexicon_Project,شكل الملابس مبهذل اليوم
+49,زنجيل,سلسلة,chain,Noun,All_Regions,Colloquial,Lexicon_Project,قفل الباب بالزنجيل
+50,قبان,ميزان كبير,scale,Noun,All_Regions,Colloquial,Lexicon_Project,وزنوا البضاعة بالقبان
+51,إشدايور,ماذا يدور / ماذا يفعل,what is happening,Phrase,Northern_Iraq,Colloquial,Lexicon_Project,إشدايور عندكم بالبيت؟
+52,بلكي,عسى / لعل,maybe / hopefully,Adv,All_Regions,Colloquial,Lexicon_Project,بلكي يجي باجر ونخلص
+53,تمن,أرز,rice,Noun,All_Regions,Colloquial,Lexicon_Project,أحب التمن والمرگة
+54,مرگة,مرق,stew,Noun,All_Regions,Colloquial,Lexicon_Project,مرگة بامية طيبة اليوم
+55,بنگج,تخدير,anesthesia,Noun,All_Regions,Colloquial,Lexicon_Project,الدكتور انطاه بنج قبل العملية
+56,شاكوش,مطرقة,hammer,Noun,All_Regions,Colloquial,Lexicon_Project,اضرب المسمار بالشاكوش
+57,جام,زجاج,glass,Noun,All_Regions,Colloquial,Lexicon_Project,جام السياسة مكسور
+58,چرباية,سرير,bed,Noun,All_Regions,Colloquial,Lexicon_Project,نام على الترباية وارتاح
+59,بانزين,وقود سيارات,gasoline,Noun,All_Regions,Colloquial,Lexicon_Project,ترست السيارة بانزين
+60,تاير,إطار سيارة,tire,Noun,All_Regions,Colloquial,Lexicon_Project,تاير السيارة بنشر بالطريق
