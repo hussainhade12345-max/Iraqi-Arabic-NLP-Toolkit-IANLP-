@@ -257,3 +257,83 @@ def clean_text(text: str) -> str:
         Cleaned text
     """
     return normalize(text)
+def clean_repeated_chars(text: str, max_repeat: int = 2) -> str:
+    """
+    Reduce repeated characters common in Iraqi social media.
+    هههههههه → هه | يييييي → يي | !!!!! → !!
+
+    Args:
+        text: Input text
+        max_repeat: Maximum allowed repetitions (default: 2)
+
+    Returns:
+        Text with reduced repetitions
+
+    Example:
+        >>> clean_repeated_chars("هههههه شلونكككك")
+        'هه شلونكك'
+    """
+    import re
+    return re.sub(r'(.)\1{' + str(max_repeat) + r',}', r'\1\1', text)
+
+
+def convert_arabic_numbers(text: str) -> str:
+    """
+    Convert Arabic-Indic numerals to Western numerals.
+    ١٢٣٤٥٦٧٨٩٠ → 1234567890
+
+    Note: Different from remove_numbers() — this converts instead of removing.
+
+    Args:
+        text: Input text
+
+    Returns:
+        Text with Western numerals
+
+    Example:
+        >>> convert_arabic_numbers("عندي ٣ أيام بس")
+        'عندي 3 أيام بس'
+    """
+    table = str.maketrans('٠١٢٣٤٥٦٧٨٩', '0123456789')
+    return text.translate(table)
+
+
+def clean_social_media(text: str) -> str:
+    """
+    Full cleaning pipeline optimized for Iraqi social media text.
+    Higher-level function that combines all preprocessing steps.
+
+    Args:
+        text: Raw social media text
+
+    Returns:
+        Cleaned text ready for NLP processing
+
+    Example:
+        >>> clean_social_media("وااااي 😭 @user الكهرباء #بغداد راحت http://t.co/x")
+        'وي الكهربا راحت'
+    """
+    text = normalize(text)
+    text = clean_repeated_chars(text)
+    text = convert_arabic_numbers(text)
+    return text.strip()
+
+
+def segment_sentences(text: str) -> List[str]:
+    """
+    Split Iraqi Arabic text into sentences.
+    Handles Arabic and Latin punctuation.
+
+    Args:
+        text: Input text
+
+    Returns:
+        List of sentence strings
+
+    Example:
+        >>> segment_sentences("الكهرباء راحت. ماي ما جاي. شنو السالفة؟")
+        ['الكهرباء راحت', 'ماي ما جاي', 'شنو السالفة']
+    """
+    import re
+    sentences = re.split(r'[.؟!،؛\n]+', text)
+    return [s.strip() for s in sentences if s.strip()]
