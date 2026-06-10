@@ -1,4 +1,4 @@
-# Iraqi Arabic Corpus
+# Iraqi Arabic NLP Toolkit (IANLP)
 
 A labeled dataset of Iraqi Arabic social media posts for NLP research.
 
