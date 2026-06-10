@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  ianlp:
+    build: .
+    container_name: iraqi-nlp-toolkit
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: bash
+    stdin_open: true
+    tty: true
+
+  ianlp-test:
+    build: .
+    container_name: iraqi-nlp-test
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests/ -v --cov=iraqi_nlp
+    depends_on:
+      - ianlp
