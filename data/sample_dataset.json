@@ -1,0 +1,287 @@
+"""
+data/sample_dataset.json - IANLP Sample Dataset for Testing and Validation
+
+This file contains a small curated sample of Iraqi Arabic text data demonstrating
+the expected format for corpus and annotation structure. 
+
+NOT PRODUCTION DATA - Use for:
+- Development and testing
+- Format validation
+- Documentation examples
+- Plugin/module testing
+
+Real dataset should be stored in:
+- corpus/train.csv (training split)
+- corpus/validation.csv (validation split)
+- corpus/test.csv (test split)
+"""
+
+{
+  "metadata": {
+    "version": "0.9.0",
+    "dataset_name": "IANLP Sample Dataset",
+    "description": "Sample Iraqi Arabic text corpus with multi-task annotations",
+    "samples_count": 25,
+    "domains": 8,
+    "creation_date": "2026-06-14",
+    "note": "This is sample data for demonstration. Real data goes in corpus/ folder."
+  },
+  
+  "corpus_samples": [
+    {
+      "text_id": "IRQ_SAMPLE_001",
+      "text": "المي مقطوع من البارحة والجو نار شوكت تحلون المشكلة؟",
+      "text_normalized": "المي مقطوع من البارحة والجو نار شوكت تحلون المشكلة",
+      "label_primary": "infrastructure",
+      "label_secondary": null,
+      "domain": "Infrastructure & Services",
+      "intent": "complaint",
+      "sentiment": "negative",
+      "urgency": "high",
+      "dialect_region": "baghdad",
+      "is_codeswitched": false,
+      "english_tokens": [],
+      "register": "colloquial",
+      "source": "social_media_sample",
+      "annotator_confidence": 0.95
+    },
+    {
+      "text_id": "IRQ_SAMPLE_002",
+      "text": "عندي assignment مهم لازم اسلمه قبل الـ Deadline والكهرباء طفت",
+      "text_normalized": "عندي assignment مهم لازم اسلمه قبل الـ deadline والكهرباء طفت",
+      "label_primary": "education",
+      "label_secondary": "infrastructure",
+      "domain": "Education + Infrastructure",
+      "intent": "complaint",
+      "sentiment": "negative",
+      "urgency": "high",
+      "dialect_region": "baghdad",
+      "is_codeswitched": true,
+      "english_tokens": ["assignment", "deadline"],
+      "register": "colloquial",
+      "source": "social_media_sample",
+      "annotator_confidence": 0.88
+    },
+    {
+      "text_id": "IRQ_SAMPLE_003",
+      "text": "اكو حادث قوي بطريق الحلة ومحتاجين اسعاف فوراً",
+      "text_normalized": "اكو حادث قوي بطريق الحلة ومحتاجين اسعاف فورا",
+      "label_primary": "security",
+      "label_secondary": "healthcare",
+      "domain": "Security + Healthcare",
+      "intent": "emergency",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "dialect_region": "south",
+      "is_codeswitched": false,
+      "english_tokens": [],
+      "register": "colloquial",
+      "source": "civic_discourse_sample",
+      "annotator_confidence": 0.98
+    },
+    {
+      "text_id": "IRQ_SAMPLE_004",
+      "text": "عاشت ايدكم على حملة التشجير بالشارع العام خطوة ممتازة",
+      "text_normalized": "عاشت ايدكم على حملة التشجير بالشارع العام خطوة ممتازة",
+      "label_primary": "administrative",
+      "label_secondary": null,
+      "domain": "Administrative Services",
+      "intent": "praise",
+      "sentiment": "positive",
+      "urgency": "low",
+      "dialect_region": "central",
+      "is_codeswitched": false,
+      "english_tokens": [],
+      "register": "colloquial",
+      "source": "social_media_sample",
+      "annotator_confidence": 0.92
+    },
+    {
+      "text_id": "IRQ_SAMPLE_005",
+      "text": "المستشفى ما بيها أدوية والناس كاعدة بالكاع وين وزارة الصحة؟",
+      "text_normalized": "المستشفى ما بيها ادوية والناس كاعدة بالكاع وين وزارة الصحة",
+      "label_primary": "healthcare",
+      "label_secondary": "administrative",
+      "domain": "Healthcare + Administrative",
+      "intent": "complaint",
+      "sentiment": "negative",
+      "urgency": "high",
+      "dialect_region": "south",
+      "is_codeswitched": false,
+      "english_tokens": [],
+      "register": "colloquial",
+      "source": "field_observation_sample",
+      "annotator_confidence": 0.90
+    },
+    {
+      "text_id": "IRQ_SAMPLE_006",
+      "text": "المنتخب لعب خوش طوبة اليوم ورفعوا راسنا بالبطولة",
+      "text_normalized": "المنتخب لعب خوش طوبة اليوم ورفعوا راسنا بالبطولة",
+      "label_primary": "employment",
+      "label_secondary": null,
+      "domain": "Employment",
+      "intent": "praise",
+      "sentiment": "positive",
+      "urgency": "low",
+      "dialect_region": "baghdad",
+      "is_codeswitched": false,
+      "english_tokens": [],
+      "register": "slang",
+      "source": "social_media_sample",
+      "annotator_confidence": 0.85
+    }
+  ],
+
+  "lexicon_samples": [
+    {
+      "iraqi_term": "خوش",
+      "msa_equivalent": "جيد",
+      "english_translation": "Good/Nice",
+      "pos_tag": "ADJ",
+      "register": "slang",
+      "region": "all_regions",
+      "usage_frequency": "high",
+      "example_sentence": "هذا خوش ولد وأمين",
+      "example_translation": "This is a good boy and honest"
+    },
+    {
+      "iraqi_term": "هسه",
+      "msa_equivalent": "الآن",
+      "english_translation": "Now",
+      "pos_tag": "ADV",
+      "register": "standard",
+      "region": "all_regions",
+      "usage_frequency": "high",
+      "example_sentence": "هسه لازم نروح",
+      "example_translation": "Now we must go"
+    },
+    {
+      "iraqi_term": "باجر",
+      "msa_equivalent": "غداً",
+      "english_translation": "Tomorrow",
+      "pos_tag": "ADV",
+      "register": "standard",
+      "region": "central_iraq",
+      "usage_frequency": "high",
+      "example_sentence": "باجر نبلش الشغل من الصبح",
+      "example_translation": "Tomorrow we start work in the morning"
+    },
+    {
+      "iraqi_term": "كلش",
+      "msa_equivalent": "جداً",
+      "english_translation": "Very/A lot",
+      "pos_tag": "ADV",
+      "register": "standard",
+      "region": "all_regions",
+      "usage_frequency": "high",
+      "example_sentence": "الاكل العراقي كلش طيب",
+      "example_translation": "Iraqi food is very good"
+    },
+    {
+      "iraqi_term": "شنو",
+      "msa_equivalent": "ماذا",
+      "english_translation": "What",
+      "pos_tag": "PRON",
+      "register": "slang",
+      "region": "all_regions",
+      "usage_frequency": "high",
+      "example_sentence": "شنو أخبارك؟",
+      "example_translation": "How are you? / What's your news?"
+    }
+  ],
+
+  "ner_samples": [
+    {
+      "text": "البارحة رحنا لشارع المتنبي واشترينا كتب",
+      "entities": [
+        {
+          "entity": "شارع المتنبي",
+          "label": "LOCATION",
+          "start": 17,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "لعبنا طوبة بملعب الشعب والجمهور جان خيالي",
+      "entities": [
+        {
+          "entity": "ملعب الشعب",
+          "label": "LOCATION",
+          "start": 13,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "جامعة بغداد سوت مؤتمر للذكاء الاصطناعي",
+      "entities": [
+        {
+          "entity": "جامعة بغداد",
+          "label": "ORGANIZATION",
+          "start": 0,
+          "end": 11
+        }
+      ]
+    }
+  ],
+
+  "dialect_samples": [
+    {
+      "text": "ياخوي الفزع وقت الضيق",
+      "dialect": "southern",
+      "region": "basra",
+      "confidence": 0.92
+    },
+    {
+      "text": "هسه المحولة احتركت وصارت ظلمة",
+      "dialect": "central",
+      "region": "baghdad",
+      "confidence": 0.88
+    },
+    {
+      "text": "الهاي قوچاق بشغله وما يتعب",
+      "dialect": "northern",
+      "region": "mosul",
+      "confidence": 0.85
+    }
+  ],
+
+  "sentiment_samples": [
+    {
+      "text": "الكهربا قطعت وما فيها حل كلش زعيم الوضع",
+      "sentiment": "negative",
+      "emotion": "frustration",
+      "intensity": "high"
+    },
+    {
+      "text": "الخدمات الحكومية اليوم كانت سريعة وكفوة الموظفين",
+      "sentiment": "positive",
+      "emotion": "satisfaction",
+      "intensity": "medium"
+    },
+    {
+      "text": "الطقس عادي والأسعار بحالها",
+      "sentiment": "neutral",
+      "emotion": null,
+      "intensity": "low"
+    }
+  ],
+
+  "codeswitching_samples": [
+    {
+      "text": "عندي meeting مهم today لازم اتجهز",
+      "language_mix": "arabic_english",
+      "arabic_ratio": 0.60,
+      "english_ratio": 0.40,
+      "english_terms": ["meeting", "today"]
+    },
+    {
+      "text": "الـ Project كان كلش تعب والـ Deadline ما كملناه",
+      "language_mix": "arabic_english",
+      "arabic_ratio": 0.65,
+      "english_ratio": 0.35,
+      "english_terms": ["Project", "Deadline"]
+    }
+  ]
+}
