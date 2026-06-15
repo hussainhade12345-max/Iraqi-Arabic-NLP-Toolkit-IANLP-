@@ -550,6 +550,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
   institution={Al-Iraqia University, Baghdad},
   url={https://github.com/hussainhade12345-max/Iraqi-Arabic-NLP-Toolkit-IANLP-},
   note={CC BY 4.0 International License}
+
+## Citation
+
+If you use this toolkit or dataset in your research, please cite it as follows:
+
+```text
+Hamzah, H. H. (2026). Iraqi Arabic NLP Toolkit (IANLP): An Annotated Corpus and Lexical Resource for Iraqi Dialect Processing. Zenodo. [https://doi.org/10.5281/zenodo.20706678](https://doi.org/10.5281/zenodo.20706678)
 }
 ```
 
