@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT%20%7C%20CC%20BY%204.0-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Research](https://img.shields.io/badge/Research-Grade-orange)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20706678.svg)](https://doi.org/10.5281/zenodo.20706678)
 
 ---
 
