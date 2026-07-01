@@ -30,7 +30,7 @@
 
 ## Abstract
 
-The **Iraqi Arabic NLP Toolkit (IANLP)** is the first open-source, systematically annotated corpus and toolkit purpose-built for Natural Language Processing research on Iraqi Arabic dialect. Iraqi Arabic (Mesopotamian Arabic, *al-lugha al-'iraqiyya*) is a low-resource Arabic variety with 40+ million native speakers yet severe computational linguistic under-resourcing. Existing Arabic NLP systems—including MARBERT, AraBERT, and transformer-based models—are primarily trained on Modern Standard Arabic (MSA) and exhibit substantial performance degradation on Iraqi dialect input. 
+The **Iraqi Arabic NLP Toolkit (IANLP)** is the first open-source, systematically annotated corpus and toolkit purpose-built for Natural Language Processing research on Iraqi Arabic dialect. Iraqi[...]
 
 This toolkit addresses this gap by providing:
 
@@ -59,7 +59,7 @@ Iraqi Arabic represents a significant linguistic variety yet faces critical unde
 
 ### Research Gap
 
-Current Arabic NLP research has focused predominantly on MSA and Levantine Arabic (due to MADAR corpus availability). Iraqi Arabic remains severely under-studied despite its linguistic and computational interest:
+Current Arabic NLP research has focused predominantly on MSA and Levantine Arabic (due to MADAR corpus availability). Iraqi Arabic remains severely under-studied despite its linguistic and computa[...]
 
 - **No standardized evaluation benchmarks** for Iraqi dialect tasks
 - **Limited dialect lexicons** capturing Iraqi-specific vocabulary
@@ -188,9 +188,9 @@ Modern Iraqi Arabic social media exhibits high Arabic-English code-switching:
 **Example**:
 ```
 Input:  "هسة الكهربا قطعت من أمس ويا ويلي"
-        (Electricity cut since yesterday, oh no!)
+         (Electricity cut since yesterday, oh no!)
 Output: Label: INFRASTRUCTURE
-        Confidence: 0.94
+         Confidence: 0.94
 ```
 
 #### 2. Dialect Identification and Classification
@@ -443,10 +443,10 @@ jupyter notebook notebooks/exploratory_analysis.ipynb
 
 | Metric | Status | Notes |
 |--------|--------|-------|
-| **Total Documents** | [In Progress] | Ongoing collection; preliminary counts available |
-| **Total Tokens** | [In Progress] | Estimated 500K+ at v1.0 release |
-| **Unique Vocabulary** | [In Progress] | Estimated 20K+ terms |
-| **Average Document Length** | [In Progress] | Expected 20-80 tokens |
+| **Total Documents** | Not yet collected | Ongoing collection; preliminary counts available |
+| **Total Tokens** | Not yet collected | Estimated 500K+ at v1.0 release |
+| **Unique Vocabulary** | Not yet collected | Estimated 20K+ terms |
+| **Average Document Length** | Not yet collected | Expected 20-80 tokens |
 
 ### Domain Distribution (Target)
 
@@ -465,12 +465,22 @@ jupyter notebook notebooks/exploratory_analysis.ipynb
 
 | Region | Documents | Percentage |
 |--------|-----------|-----------|
-| Baghdad | [In Progress] | — |
-| Basra | [In Progress] | — |
-| Wasit | [In Progress] | — |
-| Other Governorates | [In Progress] | — |
+| Baghdad | Not yet collected | — |
+| Basra | Not yet collected | — |
+| Wasit | Not yet collected | — |
+| Other Governorates | Not yet collected | — |
 
 **Note**: Statistics are preliminary and subject to change during active development.
+
+### Lexicon Statistics
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Total Entries** | 179 | Rows in iraqi_lexicon.csv |
+| **Unique Iraqi Terms** | 61 | Distinct words (accounting for duplicates) |
+| **Geographic Regions** | 6 | Central_Iraq, All_Regions, Southern_Iraq, Central_and_South, Northern_and_Kurdistan, Northern_Iraq |
+| **POS Categories** | 5 | Adv, Noun, Adj, Phrase, Verb |
+| **Register Types** | 2 | Colloquial, Slang |
 
 ---
 
@@ -556,7 +566,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 If you use this toolkit or dataset in your research, please cite it as follows:
 
 ```text
-Hamzah, H. H. (2026). Iraqi Arabic NLP Toolkit (IANLP): An Annotated Corpus and Lexical Resource for Iraqi Dialect Processing. Zenodo. [https://doi.org/10.5281/zenodo.20706678](https://doi.org/10.5281/zenodo.20706678)
+Hamzah, H. H. (2026). Iraqi Arabic NLP Toolkit (IANLP): An Annotated Corpus and Lexical Resource for Iraqi Dialect Processing. Zenodo. [https://doi.org/10.5281/zenodo.20706678](https://doi.org/10[...]
 }
 ```
 
@@ -580,21 +590,8 @@ This project is positioned within the broader landscape of Arabic dialect NLP:
 
 This project is dual-licensed:
 
-### Code License: MIT
-
-All Python code and software components are licensed under the [MIT License](LICENSE).
-
-**Terms**: Free for academic and commercial use with attribution.
-
-### Data License: CC BY 4.0
-
-Corpus and lexicon datasets are licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
-
-**Terms**:
-- ✓ Share and adapt the data
-- ✓ Use for commercial purposes
-- ✓ Modify and distribute derivatives
-- **Requirement**: Provide attribution to Hussein Hadeh and IANLP project
+Code (iraqi_nlp/): MIT License — see LICENSE
+Data (corpus/, lexicon/): CC BY 4.0 — see LICENSE-DATA
 
 ---
 
