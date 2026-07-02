@@ -1,0 +1,19 @@
+{
+  "corpus": {
+    "total_posts": "No data collected yet",
+    "training_set": "File not found",
+    "validation_set": "File not found",
+    "test_set": "File not found",
+    "avg_post_length": "No data",
+    "governorates": "Not yet tagged",
+    "domain_labels": "8 (defined, not yet collected)"
+  },
+  "lexicon": {
+    "total_entries": 877,
+    "unique_words": 337,
+    "geographic_regions": 6,
+    "pos_categories": 5,
+    "register_types": 2,
+    "coverage_percent": "N/A — corpus empty"
+  }
+}
