@@ -599,7 +599,7 @@ Data (corpus/, lexicon/): CC BY 4.0 — see LICENSE-DATA
 
 **Hussein Hadeh**  
 Al-Iraqia University, Baghdad, Iraq  
-📧 Email: hussainhade12345@gmail.com  
+📧 Email: hussain.hade12345@gmail.com  
 🔗 GitHub: [@hussainhade12345-max](https://github.com/hussainhade12345-max)
 
 **Questions, Issues, or Contributions**:
