@@ -1,2 +1,2 @@
 {"text":"علي راح للبصرة البارحة حتى يلتقي بشركة النسيج","entities":[{"entity":"علي","label":"B-PER"},{"entity":"البصرة","label":"B-LOC"},{"entity":"شركة النسيج","label":"B-ORG"}]}
-{"text":"سارة اشترت الموبايل من شارع الربيعي ببغدا��","entities":[{"entity":"سارة","label":"B-PER"},{"entity":"شارع الربيعي","label":"B-LOC"},{"entity":"بغداد","label":"B-LOC"}]}
+{"text":"سارة اشترت الموبايل من شارع الربيعي ببغداد","entities":[{"entity":"سارة","label":"B-PER"},{"entity":"شارع الربيعي","label":"B-LOC"},{"entity":"بغداد","label":"B-LOC"}]} 
