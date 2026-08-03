@@ -46,6 +46,32 @@ Note: do not publish personal links here until verified. The full name "Hussein 
 
 ---
 
+## Research Motivation and Graduate Study
+
+This repository is intentionally an early-stage research prototype developed independently by Hussein Hadi Hamzah before entering graduate school. The goal of IANLP is not to present a complete NLP toolkit, but to demonstrate research potential, technical initiative, and a long-term commitment to Computational Linguistics and Arabic dialect processing.
+
+IANLP documents concrete steps taken in data collection, annotation, and lightweight preprocessing, and provides a clear record of work that can be developed further under academic supervision. Presenting this work in an honest, reproducible way is intended to support scholarship applications (Master's and PhD) and to invite collaboration with academic advisors and research groups.
+
+---
+
+## Why Graduate Study Matters
+
+Further development of IANLP requires the academic environment, expertise, and resources typically available through graduate programs. A Master's or PhD program provides the supervision and infrastructure needed to transform this prototype into a mature scientific contribution.
+
+Key needs for advancing this project:
+
+- Academic supervision and mentorship from experienced researchers
+- Collaboration with interdisciplinary teams (linguists, sociolinguists, computational researchers)
+- Access to computational infrastructure and GPU resources for model training
+- Creation and curation of larger, carefully annotated corpora
+- Expertise in advanced machine learning and statistical evaluation
+- Institutional support for ethical review, data governance, and annotation campaigns
+- Rigorous scientific evaluation, replication studies, and error analysis
+
+A graduate program provides training, institutional context, and collaborative partnerships that are essential to undertake these activities responsibly and effectively.
+
+---
+
 ## Academic Vision
 
 IANLP is intentionally presented as an evolving academic research initiative rather than a product. The repository is designed to:
@@ -149,6 +175,19 @@ ORCID: https://orcid.org/0009-0007-4448-742X
 GitHub: https://github.com/hussainhade12345-max
 
 This project was developed independently by Hussein Hadi Hamzah before entering graduate study to demonstrate initiative and foundational skills in computational linguistics.
+
+---
+
+## Long-Term Research Vision
+
+My long-term ambition is to turn IANLP into a sustainable academic research program that produces peer-reviewed publications, open Iraqi Arabic NLP resources, and tools that support low-resource language technologies. Specific goals include:
+
+- Publish peer-reviewed papers describing data collection, annotation methodology, and model evaluations.
+- Build openly available Iraqi Arabic corpora and lexicons released under permissive academic licenses.
+- Contribute to low-resource language NLP by sharing data, models, and reproducible code with the research community.
+- Mentor and collaborate with graduate students and research groups to expand the project's scope and impact.
+
+All resulting datasets and software will be released under open licenses where possible, subject to ethical and legal constraints.
 
 ---
 
