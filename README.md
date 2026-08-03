@@ -1,282 +1,155 @@
 # Iraqi Arabic NLP Toolkit (IANLP)
-## القاموس العراقي ومنظومة معالجة اللغة الطبيعية
+
+**An academic research prototype for Iraqi Arabic dialect processing**
 
 ![Python Version](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/License-MIT%20%7C%20CC%20BY%204.0-green)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Research](https://img.shields.io/badge/Research-Grade-orange)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20706678.svg)](https://doi.org/10.5281/zenodo.20706678)
-
----
-
-## Table of Contents
-
-- [Abstract](#abstract)
-- [About the Author](#about-the-author)
-- [Academic Vision](#academic-vision)
-- [Problem Statement](#problem-statement)
-- [Dataset Description](#dataset-description)
-- [Supported NLP Tasks](#supported-nlp-tasks)
-- [Technical Specification](#technical-specification)
-- [Collection & Methodology](#collection--methodology)
-- [Repository Structure](#repository-structure)
-- [Quick Start](#quick-start)
-- [Dataset Statistics](#dataset-statistics)
-- [Current Limitations](#current-limitations)
-- [Future Research & Roadmap](#future-research--roadmap)
-- [Research Collaboration](#research-collaboration)
-- [Citation](#citation)
-- [License](#license)
-- [Contributing](#contributing)
+![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)
 
 ---
 
 ## Abstract
 
-The **Iraqi Arabic NLP Toolkit (IANLP)** is an open-source, systematically annotated corpus and toolkit intended for research on Iraqi Arabic dialect. IANLP provides a focused, research-oriented foundation for computational work on Iraqi dialectal Arabic in written social media and civic discourse contexts.
+The Iraqi Arabic NLP Toolkit (IANLP) is an independent, early-stage research prototype developed to help document and analyze Iraqi Arabic as used in social media and civic discourse. IANLP collects a labeled corpus, a dialect lexicon, and lightweight preprocessing utilities intended to support academic work in low-resource Arabic NLP. This repository demonstrates research initiative and a practical foundation for graduate-level study; it is not a finished software product.
 
-This toolkit includes:
-
-1. **Annotated Complaint Corpus**: Multi-domain labeled dataset (8 domains) covering civic and social discourse
-2. **Dialect Lexicon**: Iraqi-MSA vocabulary mapping with register labels and geographic distribution
-3. **Iraqi-Specific Preprocessing**: Character normalization, code-switching detection, dialect feature extraction
-4. **Baseline Implementations**: Task-specific utilities for sentiment analysis, dialect identification, and intent detection
-
-IANLP is designed as a research prototype to support scholarship in low-resource Arabic NLP, dialect variation, and multilingual systems. The dataset is released under CC BY 4.0 for academic and research use.
+This README frames the project for scholarship reviewers and academic collaborators: it explains the project's scope, research limitations, and a realistic roadmap for future graduate-level research under academic supervision.
 
 ---
 
 ## About the Author
 
-**Hussein Hadi Hamzah Ali** — Iraqi researcher and open-source developer with a background in English Language. The author’s research interests include:
+**Hussein Hadi Hamzah** — independent researcher and open-source developer. This project was developed independently prior to entering graduate study to demonstrate motivation and foundational skills in computational linguistics.
+
+Research interests:
 
 - Computational Linguistics
 - Natural Language Processing
-- Arabic Dialect Processing
-- Iraqi Arabic
-- Low-Resource Languages
-- Artificial Intelligence
+- Iraqi Arabic Dialects
 - Corpus Linguistics
-- Machine Learning
+- Low-Resource Languages
+- Arabic NLP
+- Artificial Intelligence
 
-Professional profiles (placeholders — add links in repository settings or README):
+Profiles & identifiers (placeholders — replace with verified links where available):
 
+- ORCID: https://orcid.org/0009-0007-4448-742X
 - GitHub: https://github.com/hussainhade12345-max
 - Hugging Face: https://huggingface.co/USERNAME
-- ORCID: https://orcid.org/0000-0000-0000-0000
-- Google Scholar: https://scholar.google.com/citations?user=YOUR_ID
-- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE
+- Zenodo: https://zenodo.org/ (dataset DOI may be added here)
+- Google Scholar: (placeholder)
+- ResearchGate: (placeholder)
+- Semantic Scholar: (placeholder)
+- LinkedIn: (placeholder)
+- Personal website: (placeholder)
 
-(Replace placeholders above with the author’s verified profile links for public distribution.)
+Note: do not publish personal links here until verified. The full name "Hussein Hadi Hamzah" is used throughout this repository to aid discoverability in academic contexts.
 
 ---
 
 ## Academic Vision
 
-This repository is intentionally presented as an academic research prototype. The goal is to demonstrate research initiative, reproducible methodology, and a clear roadmap for advanced study rather than to provide a production-ready software product.
+IANLP is intentionally presented as an evolving academic research initiative rather than a product. The repository is designed to:
 
-Key points:
+- Document methods, data collection, and annotation practices in a reproducible way.
+- Provide a clear set of research questions and a realistic roadmap for graduate-level investigation.
+- Invite collaboration with university research groups and advisors who can provide supervision, computational resources, and institutional review oversight.
 
-- IANLP is a work-in-progress research dataset and toolkit intended for graduate-level research, thesis projects, and collaborative academic publications.
-- Substantial future development (e.g., large-scale model training, corpus expansion, controlled annotation studies) will require university resources, expert supervision, and ethical approvals where applicable.
-- The repository documents what has been done and what remains to be explored; limitations and open research questions are stated transparently.
-
----
-
-## Problem Statement
-
-### Linguistic Under-Resourcing
-
-Iraqi Arabic represents a significant linguistic variety yet faces critical under-resourcing in computational linguistics:
-
-| Factor | Impact |
-|--------|--------|
-| **Linguistic Distance from MSA** | Iraqi Arabic exhibits distinct phonology, morphology, and lexicon compared to Modern Standard Arabic |
-| **NLP System Performance Gap** | Off-the-shelf Arabic NLP models often underperform on Iraqi dialects |
-| **Corpus Absence** | Limited publicly available, systematically annotated corpora for Iraqi dialect |
-| **Dialect Diversity** | Iraqi Arabic exhibits significant regional variation |
-| **Code-Mixing Complexity** | High Arabic-English code-switching in digital contexts |
-
-### Research Gap
-
-Current Arabic NLP research has focused predominantly on MSA and better-resourced dialects. IANLP provides foundational resources for:
-
-- Dialect identification and classification research
-- Cross-dialect transfer learning studies
-- Low-resource Arabic NLP methodology development
-- Linguistic documentation of Iraqi Arabic variation
-
----
-
-## Dataset Description
-
-### Overview
-
-**IANLP Corpus** comprises annotated Iraqi Arabic text from social media and civic discourse, manually labeled for complaint domain classification and linguistic analysis.
-
-(Full dataset description retained — see previous sections in the repository for detailed dataset, lexicon, and annotation guidelines.)
-
----
-
-## Supported NLP Tasks
-
-(As described in the original README: multi-class classification, dialect ID, NER, sentiment analysis, code-switching detection.)
-
----
-
-## Technical Specification
-
-(See original README content for data formats and preprocessing details.)
-
----
-
-## Collection & Methodology
-
-(See original README content for collection phases, annotation workflow, and ethical considerations.)
-
----
-
-## Repository Structure
-
-(See original README content for file and directory layout.)
-
----
-
-## Quick Start
-
-(Installation and usage examples remain unchanged.)
-
----
-
-## Dataset Statistics
-
-(Statistics and notes remain unchanged — current counts are preliminary.)
+Substantial next steps (large-scale model training, controlled annotation studies, speech collection) should be carried out with academic supervision and ethical approvals as required by universities and research institutions.
 
 ---
 
 ## Current Limitations
 
-This project is deliberately a research prototype. The following realistic limitations are presented to inform reviewers and potential collaborators:
+To help reviewers assess the project's maturity, the following limitations are stated explicitly:
 
-- Limited corpus size compared to large-scale corpora used for training deep learning models.
-- Several components use rule-based or heuristic approaches rather than fully data-driven models.
-- Dialect coverage is currently limited to a subset of Iraqi governorates and urban registers.
-- Linguistic annotations are focused on domain and register; fine-grained morphological and syntactic annotation is not yet complete.
-- There is no large pre-trained transformer model specifically trained on Iraqi Arabic included in this release.
-- This codebase is a research prototype and is not production-hardened (logging, packaging, and deployment pipelines are minimal by design).
+- Limited annotated corpus size relative to large-scale corpora used for transformer training.
+- Many preprocessing components rely on rule-based heuristics rather than fully data-driven models.
+- Dialect coverage is currently focused on a subset of Iraqi governorates and principally urban registers.
+- Linguistic annotation is primarily at the domain/register level; morphological, syntactic, and NER annotation layers are incomplete or absent.
+- No transformer-based Iraqi Arabic language model is included with this release.
+- The repository is a research prototype; it is not production-hardened (packaging, robust CI, and deployment are intentionally minimal).
 
-We report these limitations openly; addressing them is part of the stated future research agenda.
+These limitations reflect the project's status as an early-stage independent research effort and motivate the future research agenda below.
 
 ---
 
-## Future Research & Roadmap
+## Future Research Roadmap
 
-Planned research directions that preserve the academic focus of the project:
+This roadmap outlines research directions appropriate for a Master's or PhD program supervised by academic advisors.
 
-Short term (next 6-12 months):
+Short-term (within a Master's project):
 
-- Expand the annotated corpus with additional governorates and genres.
-- Improve annotation guidelines and measure inter-annotator agreement rigorously.
-- Release clearer dataset splits and baseline evaluation scripts.
+- Expand the annotated corpus across more governorates and registers.
+- Improve annotation guidelines and measure inter-annotator agreement.
+- Release reproducible dataset splits and baseline evaluation scripts.
+- Develop targeted evaluation protocols for domain classification and dialect identification.
 
-Medium term (1-2 years):
+Medium-term (suitable for master's thesis or early PhD work):
 
-- Develop transformer-based Iraqi Arabic language models (research-only; requires computational resources and ethical governance).
-- Add morphological and syntactic annotation layers.
-- Introduce Named Entity Recognition annotations and benchmarks.
-- Collect a small speech corpus for spoken Iraqi Arabic research.
+- Develop transformer-based Iraqi Arabic models (small-scale research models) and evaluate cross-dialect transfer.
+- Add morphological annotation and a basic POS tagset tailored for Iraqi Arabic.
+- Create Named Entity Recognition (NER) annotations and baseline NER models.
+- Collect a pilot speech corpus to support spoken dialect research.
+- Perform systematic error analysis and qualitative linguistic validation with expert annotators.
 
-Long term:
+Long-term (PhD-level research or collaborative projects):
 
-- Benchmark against international Arabic NLP shared tasks.
-- Explore educational and governmental NLP applications with appropriate partnership and oversight.
+- Build larger transformer models and conduct rigorous benchmarking against international Arabic NLP tasks.
+- Explore dependency parsing, constituency parsing, and advanced syntactic annotation for Iraqi Arabic.
+- Develop QA (question answering) and information extraction systems adapted to Iraqi Arabic.
+- Investigate Retrieval-Augmented Generation (RAG) approaches for dialect-aware retrieval and generation.
+- Publish dataset and model artifacts to platforms such as Hugging Face Datasets and release research code to PyPI (research-only packages).
+- Produce peer-reviewed publications describing methods, dataset construction, and evaluations suitable for NLP conferences and journals.
 
-Each item above is intended as a research objective rather than a guarantee of delivery; implementation depends on academic collaboration and resource availability.
+Each roadmap item is a research objective: timeline and realization depend on academic collaboration, access to compute resources, and institutional approvals.
 
 ---
 
 ## Research Collaboration
 
-We invite collaboration from universities, academic researchers, graduate students, and institutional partners. Areas of potential collaboration include:
+IANLP is explicitly offered as a starting point for collaboration. University professors, research groups, graduate students, and institutional partners interested in Arabic dialect NLP are invited to contribute or supervise further research. Possible collaboration activities include:
 
-- Corpus expansion and controlled annotation campaigns
-- Interdisciplinary projects combining sociolinguistics and NLP
-- Model development under ethical guidelines and university supervision
-- Comparative dialectology and cross-dialect transfer studies
+- Joint annotation campaigns and inter-annotator agreement studies
+- Co-supervised thesis projects (Master's or PhD) using the dataset
+- Shared grant proposals for corpus expansion and compute resources
+- Cross-lingual and cross-dialect transfer studies
 
-If you are interested in collaboration, please open an issue or contact the author directly (see Contact information below).
-
----
-
-## Discoverability, Topics & Keywords
-
-Suggested repository topics (add these via repository settings for improved discoverability):
-
-- iraqi-arabic
-- arabic-nlp
-- dialect-nlp
-- low-resource-nlp
-- corpus-linguistics
-- computational-linguistics
-- named-entity-recognition
-- sentiment-analysis
-
-Suggested keywords for search engines and academic indexing:
-
-Iraqi Arabic, dialect NLP, corpus linguistics, low-resource languages, Arabic dialects, Hussein Hadi Hamzah Ali, IANLP
+If you are interested, please open an issue, or contact the author via the email address listed in AUTHOR.md.
 
 ---
 
-## Profiles & Links (placeholders)
+## How to Use This Repository (Quick Start)
 
-- GitHub: https://github.com/hussainhade12345-max
-- Hugging Face: https://huggingface.co/USERNAME
-- ORCID: https://orcid.org/0000-0000-0000-0000
-- Google Scholar: https://scholar.google.com/citations?user=YOUR_ID
-- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE
+The code and dataset are provided to facilitate reproducible research. Basic usage remains unchanged — see the existing code and notebooks for examples. In short:
 
-Replace placeholders above with verified profiles before publicizing the repository widely.
+```bash
+# Clone the repository
+git clone https://github.com/hussainhade12345-max/Iraqi-Arabic-NLP-Toolkit-IANLP-.git
+cd Iraqi-Arabic-NLP-Toolkit-IANLP-
 
----
+# Install dependencies
+pip install -r requirements.txt
+```
 
-## Citation
-
-(Original citation content retained.)
-
----
-
-## License
-
-This project is dual-licensed:
-
-Code (iraqi_nlp/): MIT License — see LICENSE
-Data (corpus/, lexicon/): CC BY 4.0 — see LICENSE-DATA
+See `notebooks/` for exploratory analysis and `scripts/` for utility scripts. The sync-to-Hugging Face helper script (if present) reads the HF token from the environment and must be used with a token stored in repository secrets or local environment variables.
 
 ---
 
-## Author & Contact
+## Citation & License
 
-**Hussein Hadi Hamzah Ali**  
-Al-Iraqia University, Baghdad, Iraq  
-📧 Email: hussain.hade12345@gmail.com  
-🔗 GitHub: [@hussainhade12345-max](https://github.com/hussainhade12345-max)  
-🔗 ORCID: https://orcid.org/0000-0000-0000-0000  
-
-Please use the GitHub issue tracker for reproducibility questions, dataset corrections, and collaboration inquiries.
+Please cite this repository and any associated dataset artifacts according to the citation guidance in the original README. Code is licensed under the MIT License and dataset materials are provided under CC BY 4.0.
 
 ---
 
-## Acknowledgments
+## Contact & Author
 
-(This section retained.)
+**Hussein Hadi Hamzah**  
+Email: hussain.hade12345@gmail.com  
+ORCID: https://orcid.org/0009-0007-4448-742X  
+GitHub: https://github.com/hussainhade12345-max
 
----
-
-**Status**: 🚀 Active Development  
-**Current Version**: v0.9 (Pre-release)  
-**Last Updated**: June 2025  
-**Next Release Target**: v1.0 (2025)
+This project was developed independently by Hussein Hadi Hamzah before entering graduate study to demonstrate initiative and foundational skills in computational linguistics.
 
 ---
 
-**Research-Grade NLP Toolkit for Low-Resource Arabic Dialect**
+**Status**: Research prototype — evolving under academic direction
