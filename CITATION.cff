@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software/dataset, please cite it using the metadata below."
+title: "Iraqi Arabic NLP Toolkit (IANLP)"
+authors:
+  - family-names: "Hadeh"
+    given-names: "Hussein"
+version: "0.9.0"
+doi: "10.5281/zenodo.20706678"
+date-released: "2025-06-01"
+url: "https://github.com/hussainhade12345-max/Iraqi-Arabic-NLP-Toolkit-IANLP-"
