@@ -1,3 +1,4 @@
+pip requirements
 pandas
 numpy
 scikit-learn
@@ -9,3 +10,4 @@ tqdm
 jupyter
 regex
 nltk
+huggingface_hub
