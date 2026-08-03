@@ -597,7 +597,7 @@ Data (corpus/, lexicon/): CC BY 4.0 — see LICENSE-DATA
 
 ## Author & Contact
 
-**Hussein Hadeh**  
+**Hussein Hadi hamzah ali**  
 Al-Iraqia University, Baghdad, Iraq  
 📧 Email: hussain.hade12345@gmail.com  
 🔗 GitHub: [@hussainhade12345-max](https://github.com/hussainhade12345-max)
