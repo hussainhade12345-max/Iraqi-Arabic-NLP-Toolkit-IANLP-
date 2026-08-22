@@ -4,5 +4,19 @@
   {"word": "ميز", "fusha": "طاولة", "pos": "noun"},
   {"word": "شكو", "fusha": "ماذا يوجد", "pos": "question"},
   {"word": "خاشوكة", "fusha": "ملعقة", "pos": "noun"},
-  {"word": "صوندة", "fusha": "خرطوم مياه", "pos": "noun"}
+  {"word": "صوندة", "fusha": "خرطوم مياه", "pos": "noun"},
+  {"word": "عازه", "fusha": "حاجة", "pos": "noun"},
+  {"word": "يتعاجز", "fusha": "يتكاسل", "pos": "verb"},
+  {"word": "قاط", "fusha": "بدلة رسمية", "pos": "noun"},
+  {"word": "دفتر", "fusha": "عشرة آلاف دولار", "pos": "noun"},
+  {"word": "ورقة", "fusha": "مائة دولار", "pos": "noun"},
+  {"word": "دردم", "fusha": "تذمر بصوت خفيض", "pos": "verb"},
+  {"word": "يمعود", "fusha": "يا رجل / تنبيه", "pos": "particle"},
+  {"word": "عسيوي", "fusha": "أيسر", "pos": "adjective"},
+  {"word": "بنجر", "fusha": "ثقب الإطار", "pos": "noun"},
+  {"word": "طاسة", "fusha": "وعاء", "pos": "noun"},
+  {"word": "چنطة", "fusha": "حقيبة", "pos": "noun"},
+  {"word": "مزرف", "fusha": "متقوب", "pos": "adjective"},
+  {"word": "دوشمة", "fusha": "تنجيد الأثاث", "pos": "noun"},
+  {"word": "كلاوات", "fusha": "احتيال / هراء", "pos": "noun"}
 ]
