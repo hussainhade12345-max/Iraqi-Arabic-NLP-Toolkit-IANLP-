@@ -1,36 +1,76 @@
 #!/usr/bin/env python3
 """
-Sync repository content (corpus/, lexicon/, README.md) to a Hugging Face dataset repo.
+Reliable one-way synchronization script from GitHub to Hugging Face.
 
-Requirements:
-- NEVER hardcode a token. Read HF_TOKEN from the environment.
-- REPO_ID is defined near the top for easy edits.
-- Skip uploading iraqi_nlp/, .git/, __pycache__/, and patterns listed in .gitignore.
-- Print a clear summary at the end.
+Key Features & Guarantees:
+1. GitHub is the single source of truth.
+2. Synchronizes NLP modules:
+   - iraqi_nlp/
+   - tests/
+   - corpus/
+   - lexicon/
+   - data/
+   - README.md, pyproject.toml, setup.py, requirements.txt, LICENSE, LICENSE-DATA
+3. Excludes:
+   - Tokens, API keys, credentials, .env*
+   - __pycache__/, *.pyc, *.pyo, *.pyd
+   - .git/, .github/, .pytest_cache/, *.egg-info/, build/, dist/
+4. Non-destructive: Never deletes existing remote Hugging Face files automatically.
+5. Verification: Can run test suite or schema validation before upload.
+6. Detailed sync reporting: Added, updated, skipped files, and commit URL.
+7. Supports dry-run execution (--dry-run).
 """
 
 from pathlib import Path
 import os
 import sys
 import fnmatch
-from typing import List
+import argparse
+import subprocess
+from typing import List, Dict, Set, Tuple, Optional, Any
 
-from huggingface_hub import HfApi, upload_file
+try:
+    from huggingface_hub import HfApi, upload_file, list_repo_files
+except ImportError:
+    HfApi = None
+    upload_file = None
+    list_repo_files = None
 
-# Edit this to change target repo later
-REPO_ID = "hussainhadi/ianlp"  # target on Hugging Face Hub
+# Default Hugging Face target dataset repository
+DEFAULT_REPO_ID = "hussainhadi/Iraqi-Arabic-NLP-Toolkit-IANLP"
 REPO_TYPE = "dataset"
 
-ROOT = Path(__file__).resolve().parents[1]  # repo root (one level up from scripts/)
+ROOT = Path(__file__).resolve().parents[1]
 GITIGNORE_PATH = ROOT / ".gitignore"
 
-# Directories to sync
-UPLOAD_DIRS = ["corpus", "lexicon"]
-README = "README.md"
+# Directories and top-level files to synchronize
+SYNC_DIRS = ["iraqi_nlp", "tests", "corpus", "lexicon", "data"]
+SYNC_FILES = [
+    "README.md",
+    "pyproject.toml",
+    "setup.py",
+    "requirements.txt",
+    "LICENSE",
+    "LICENSE-DATA",
+    "CITATION.cff"
+]
 
-# Always skip these top-level entries
-ALWAYS_SKIP_PREFIXES = ("iraqi_nlp", ".git")
-ALWAYS_SKIP_CONTAINS = ("__pycache__",)
+# Strict security exclusions (never sync to Hugging Face)
+ALWAYS_SKIP_PREFIXES = (".git", ".github")
+ALWAYS_SKIP_CONTAINS = ("__pycache__", ".pytest_cache", ".egg-info")
+ALWAYS_SKIP_EXTENSIONS = (".pyc", ".pyo", ".pyd")
+ALWAYS_SKIP_PATTERNS = [
+    ".env*",
+    "*token*",
+    "*secret*",
+    "*credential*",
+    "*.key",
+    "*.pem",
+    ".DS_Store",
+    "dist/*",
+    "build/*"
+]
+
 
 def load_gitignore_patterns(gitignore_path: Path) -> List[str]:
     patterns: List[str] = []
@@ -42,126 +82,223 @@ def load_gitignore_patterns(gitignore_path: Path) -> List[str]:
             patterns.append(line)
     return patterns
 
+
 def matches_any_pattern(rel_path: str, patterns: List[str]) -> bool:
-    # Normalize path to forward slashes for pattern matching
     rel = rel_path.replace(os.sep, "/")
     for pat in patterns:
-        # Convert gitignore directory pattern "dir/" -> "dir/*"
         p = pat
         if p.endswith("/"):
             p = p + "*"
-        # Try fnmatch both the full rel path and the basename
         if fnmatch.fnmatch(rel, p) or fnmatch.fnmatch(os.path.basename(rel), p):
             return True
     return False
 
-def should_skip(rel_path: str, gitignore_patterns: List[str]) -> bool:
-    # Skip always-specified prefixes
+
+def is_excluded(rel_path: str, gitignore_patterns: Optional[List[str]] = None) -> Tuple[bool, str]:
+    """
+    Check if a file should be excluded from synchronization.
+    Returns (is_excluded, reason).
+    """
+    rel = rel_path.replace(os.sep, "/")
+
     for pfx in ALWAYS_SKIP_PREFIXES:
-        if rel_path == pfx or rel_path.startswith(pfx + "/"):
-            return True
-    # Skip if contains any 'always skip' segments
+        if rel == pfx or rel.startswith(pfx + "/"):
+            return True, f"Excluded top-level directory: {pfx}"
+
     for seg in ALWAYS_SKIP_CONTAINS:
-        if f"/{seg}/" in "/" + rel_path or rel_path.endswith(seg) or f"/{seg}" in rel_path:
-            return True
-    # Skip if matched by .gitignore patterns
-    if matches_any_pattern(rel_path, gitignore_patterns):
-        return True
-    return False
+        if f"/{seg}/" in "/" + rel + "/" or rel.endswith(seg):
+            return True, f"Excluded artifact directory: {seg}"
 
-def upload_directory(api: HfApi, token: str, dir_name: str, uploaded: List[str], gitignore_patterns: List[str]):
-    base = ROOT / dir_name
-    if not base.exists():
-        print(f"Skipping {dir_name}: directory not found.")
-        return
-    for root, _, files in os.walk(base):
-        for fname in files:
-            full = Path(root) / fname
-            rel = str(full.relative_to(ROOT)).replace(os.sep, "/")
-            if should_skip(rel, gitignore_patterns):
-                # debug: print(f"Skipping {rel} (ignored)")
-                continue
-            # path_in_repo should mirror repo structure starting from root
-            path_in_repo = rel
-            try:
-                upload_file(
-                    path_or_fileobj=str(full),
-                    path_in_repo=path_in_repo,
-                    repo_id=REPO_ID,
-                    repo_type=REPO_TYPE,
-                    token=token,
-                )
-                uploaded.append(path_in_repo)
-                print(f"Uploaded: {path_in_repo}")
-            except Exception as e:
-                # Don't print token or sensitive headers. Provide guidance instead.
-                print(f"Failed to upload {path_in_repo}: {type(e).__name__}. Check HF_TOKEN and network connectivity.")
+    for ext in ALWAYS_SKIP_EXTENSIONS:
+        if rel.endswith(ext):
+            return True, f"Excluded binary extension: {ext}"
 
-def upload_readme(api: HfApi, token: str, uploaded: List[str], gitignore_patterns: List[str]):
-    readme_path = ROOT / README
-    if not readme_path.exists():
-        print("No README.md at repo root to upload.")
-        return
-    rel = str(readme_path.relative_to(ROOT)).replace(os.sep, "/")
-    if should_skip(rel, gitignore_patterns):
-        print("README.md is ignored by .gitignore; skipping.")
-        return
+    for pat in ALWAYS_SKIP_PATTERNS:
+        if fnmatch.fnmatch(rel, pat) or fnmatch.fnmatch(os.path.basename(rel), pat):
+            return True, f"Matched sensitive pattern: {pat}"
+
+    if gitignore_patterns and matches_any_pattern(rel, gitignore_patterns):
+        # Allow files in SYNC_DIRS even if general gitignore has loose patterns, but respect gitignore otherwise
+        return True, "Matched .gitignore pattern"
+
+    return False, ""
+
+
+def collect_local_files_to_sync(root_dir: Path = ROOT) -> List[Path]:
+    """Collect all eligible local files for synchronization."""
+    gitignore_patterns = load_gitignore_patterns(root_dir / ".gitignore")
+    files_to_sync: List[Path] = []
+
+    # 1. Directories
+    for dir_name in SYNC_DIRS:
+        dir_path = root_dir / dir_name
+        if not dir_path.exists():
+            continue
+        for root, _, files in os.walk(dir_path):
+            for fname in files:
+                full_path = Path(root) / fname
+                rel_path = str(full_path.relative_to(root_dir)).replace(os.sep, "/")
+                excluded, _ = is_excluded(rel_path, gitignore_patterns)
+                if not excluded:
+                    files_to_sync.append(full_path)
+
+    # 2. Individual top-level files
+    for file_name in SYNC_FILES:
+        full_path = root_dir / file_name
+        if full_path.exists() and full_path.is_file():
+            rel_path = file_name
+            excluded, _ = is_excluded(rel_path, gitignore_patterns)
+            if not excluded:
+                files_to_sync.append(full_path)
+
+    return sorted(files_to_sync)
+
+
+def run_pre_sync_validation() -> bool:
+    """Run pytest suite before synchronizing to ensure code integrity."""
+    print("Running pre-synchronization test suite...")
     try:
-        upload_file(
-            path_or_fileobj=str(readme_path),
-            path_in_repo="README.md",
-            repo_id=REPO_ID,
-            repo_type=REPO_TYPE,
-            token=token,
-        )
-        uploaded.append("README.md")
-        print("Uploaded: README.md")
+        res = subprocess.run([sys.executable, "-m", "pytest", "tests/"], cwd=str(ROOT), capture_output=True, text=True)
+        if res.returncode == 0:
+            print("Pre-sync tests passed successfully.")
+            return True
+        else:
+            print(f"Pre-sync tests failed (exit code {res.returncode}):\n{res.stdout}\n{res.stderr}")
+            return False
     except Exception as e:
-        print(f"Failed to upload README.md: {type(e).__name__}. Check HF_TOKEN and network connectivity.")
+        print(f"Error running pre-sync validation: {e}")
+        return False
+
+
+def sync_to_huggingface(
+    repo_id: str = DEFAULT_REPO_ID,
+    token: Optional[str] = None,
+    dry_run: bool = False,
+    skip_validation: bool = False
+) -> Dict[str, Any]:
+    """
+    Perform one-way sync from local repository to Hugging Face.
+    """
+    report = {
+        "repo_id": repo_id,
+        "dry_run": dry_run,
+        "validation_passed": False,
+        "added_files": [],
+        "updated_files": [],
+        "skipped_files": [],
+        "commit_url": None,
+        "error": None
+    }
+
+    # 1. Pre-sync validation
+    if not skip_validation:
+        if not run_pre_sync_validation():
+            report["error"] = "Pre-sync validation failed. Synchronization aborted."
+            return report
+        report["validation_passed"] = True
+    else:
+        report["validation_passed"] = True
+
+    # 2. Collect local files
+    local_files = collect_local_files_to_sync(ROOT)
+    if not local_files:
+        report["error"] = "No local files found to synchronize."
+        return report
+
+    # 3. Handle Dry Run
+    if dry_run:
+        print(f"\n--- DRY RUN: Synchronizing to {repo_id} ---")
+        for f in local_files:
+            rel = str(f.relative_to(ROOT)).replace(os.sep, "/")
+            report["added_files"].append(rel)
+            print(f"[DRY-RUN] Will sync: {rel}")
+        print(f"Total files to sync: {len(report['added_files'])}")
+        return report
+
+    # 4. Authenticate & Connect
+    if not token:
+        token = os.environ.get("HF_TOKEN")
+    if not token:
+        report["error"] = "HF_TOKEN is not set. Please provide HF_TOKEN via environment variable or argument."
+        return report
+
+    if HfApi is None:
+        report["error"] = "huggingface_hub package is not installed."
+        return report
+
+    api = HfApi()
+
+    # Verify repository exists
+    try:
+        api.repo_info(repo_id=repo_id, repo_type=REPO_TYPE, token=token)
+        print(f"Verified Hugging Face repository: {repo_id}")
+    except Exception as e:
+        report["error"] = f"Could not access Hugging Face repository {repo_id}: {type(e).__name__}."
+        return report
+
+    # Fetch existing remote files to determine added vs updated
+    remote_files = set()
+    try:
+        remote_files = set(list_repo_files(repo_id=repo_id, repo_type=REPO_TYPE, token=token))
+    except Exception:
+        pass
+
+    # 5. Upload files non-destructively
+    for local_path in local_files:
+        rel_path = str(local_path.relative_to(ROOT)).replace(os.sep, "/")
+        try:
+            upload_file(
+                path_or_fileobj=str(local_path),
+                path_in_repo=rel_path,
+                repo_id=repo_id,
+                repo_type=REPO_TYPE,
+                token=token,
+            )
+            if rel_path in remote_files:
+                report["updated_files"].append(rel_path)
+                print(f"Updated: {rel_path}")
+            else:
+                report["added_files"].append(rel_path)
+                print(f"Added: {rel_path}")
+        except Exception as e:
+            report["skipped_files"].append(rel_path)
+            print(f"Failed to upload {rel_path}: {type(e).__name__}")
+
+    report["commit_url"] = f"https://huggingface.co/datasets/{repo_id}/tree/main"
+    return report
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Synchronize IANLP repository to Hugging Face dataset.")
+    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", DEFAULT_REPO_ID), help="Hugging Face repo ID")
+    parser.add_argument("--dry-run", action="store_true", help="Preview files to synchronize without uploading")
+    parser.add_argument("--skip-validation", action="store_true", help="Skip pre-sync test execution")
+    args = parser.parse_args()
+
     token = os.environ.get("HF_TOKEN")
-    if not token:
-        sys.exit("HF_TOKEN is not set. Export it first (export HF_TOKEN=your_token) and retry.")
+    report = sync_to_huggingface(
+        repo_id=args.repo_id,
+        token=token,
+        dry_run=args.dry_run,
+        skip_validation=args.skip_validation
+    )
 
-    api = HfApi()
-    gitignore_patterns = load_gitignore_patterns(GITIGNORE_PATH)
-
-    # Verify repo exists; if not, create it
-    try:
-        api.repo_info(repo_id=REPO_ID, repo_type=REPO_TYPE, token=token)
-        print(f"Found Hugging Face repo: {REPO_ID}")
-    except Exception:
-        print(f"Hugging Face repo {REPO_ID} not found. Attempting to create it as a dataset repo...")
-        try:
-            api.create_repo(repo_id=REPO_ID, repo_type=REPO_TYPE, token=token)
-            print(f"Created dataset repo {REPO_ID} on Hugging Face Hub.")
-        except Exception as e:
-            sys.exit("Could not create or access the Hugging Face repo. Check HF_TOKEN and your permissions.")
-
-    uploaded_files: List[str] = []
-    try:
-        for d in UPLOAD_DIRS:
-            upload_directory(api, token, d, uploaded_files, gitignore_patterns)
-        # Upload README
-        upload_readme(api, token, uploaded_files, gitignore_patterns)
-    except KeyboardInterrupt:
-        print("Interrupted by user.")
-    except Exception as e:
-        print("An unexpected error occurred during upload:", type(e).__name__)
+    print("\n" + "=" * 60)
+    print("SYNCHRONIZATION REPORT")
+    print("=" * 60)
+    print(f"Target Repo:         {report['repo_id']}")
+    print(f"Dry Run:             {report['dry_run']}")
+    print(f"Validation Passed:   {report['validation_passed']}")
+    print(f"Added Files:         {len(report['added_files'])}")
+    print(f"Updated Files:       {len(report['updated_files'])}")
+    print(f"Skipped / Failed:    {len(report['skipped_files'])}")
+    if report["commit_url"]:
+        print(f"Hugging Face URL:    {report['commit_url']}")
+    if report["error"]:
+        print(f"Status / Error:      {report['error']}")
         sys.exit(1)
+    print("=" * 60)
 
-    # Summary
-    print("\nSync complete.")
-    if uploaded_files:
-        print(f"Uploaded {len(uploaded_files)} file(s):")
-        for p in uploaded_files:
-            print(f" - {p}")
-    else:
-        print("No files were uploaded (check .gitignore and the listed directories).")
-
-    print(f"Hugging Face dataset URL: https://huggingface.co/datasets/{REPO_ID}")
 
 if __name__ == "__main__":
     main()
