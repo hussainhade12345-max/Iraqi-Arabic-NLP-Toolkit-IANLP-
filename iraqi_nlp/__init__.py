@@ -10,6 +10,8 @@ GitHub  : https://github.com/hussainhade12345-max/Iraqi-Arabic-NLP-Toolkit-IANLP
 
 from .preprocessing import (
     normalize,
+    normalize_arabic_chars,
+    normalize_iraqi_text,
     tokenize,
     clean_text,
     clean_social_media,
@@ -17,9 +19,12 @@ from .preprocessing import (
     convert_arabic_numbers,
     segment_sentences,
     remove_diacritics,
+    remove_tatweel,
     remove_urls,
+    remove_emails,
     remove_mentions,
     remove_hashtags,
+    remove_emojis,
     remove_emoji,
     is_arabic,
 )
@@ -27,16 +32,42 @@ from .preprocessing import (
 from .codeswitch import (
     detect_codeswitch,
     get_switch_density,
+    CodeSwitchResult,
+)
+
+from .intent import (
+    detect_intent,
+    get_intent_label,
+)
+
+from .lexicon import (
+    IraqiLexicon,
+)
+
+from .dataset_validator import (
+    ValidationReport,
+    validate_dataframe_schema,
+    validate_json_dataset,
+    detect_data_leakage,
+)
+
+from .data_loader import (
+    load_corpus_splits,
+    load_sentiment_dataset,
+    split_dataset,
+    SentimentBaseline,
 )
 
 __version__ = "0.1.0"
 __author__  = "Hussein Hadeh"
-__email__   = ""
+__email__   = "hussain.hade12345@gmail.com"
 __license__ = "MIT"
 
 __all__ = [
     # Preprocessing
     "normalize",
+    "normalize_arabic_chars",
+    "normalize_iraqi_text",
     "tokenize",
     "clean_text",
     "clean_social_media",
@@ -44,12 +75,31 @@ __all__ = [
     "convert_arabic_numbers",
     "segment_sentences",
     "remove_diacritics",
+    "remove_tatweel",
     "remove_urls",
+    "remove_emails",
     "remove_mentions",
     "remove_hashtags",
+    "remove_emojis",
     "remove_emoji",
     "is_arabic",
     # Code-switching
     "detect_codeswitch",
     "get_switch_density",
+    "CodeSwitchResult",
+    # Intent
+    "detect_intent",
+    "get_intent_label",
+    # Lexicon
+    "IraqiLexicon",
+    # Dataset Validation
+    "ValidationReport",
+    "validate_dataframe_schema",
+    "validate_json_dataset",
+    "detect_data_leakage",
+    # Data Loader & Baseline
+    "load_corpus_splits",
+    "load_sentiment_dataset",
+    "split_dataset",
+    "SentimentBaseline",
 ]
