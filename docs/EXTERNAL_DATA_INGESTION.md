@@ -1,37 +1,56 @@
-# External data ingestion (Stage 2 adapters)
+# External data ingestion (Stage 3 integration and profiling)
 
-Stage 2 adds local CSV, JSON, JSONL readers, pinned-file Hugging Face and GitHub adapters, optional Parquet parsing, record mapping/policy checks, duplicate reporting, and bounded network acquisition. These modules are tested with local fixtures and injected mock fetchers. **No registered real dataset was downloaded or imported as part of this implementation.**
+Stage 3 connects local readers, the registry, canonical staging mapping, quarantine policy, and reports. The CLI remains **dry-run only**. It accepts a local fixture file for profiling and makes no network requests. There is still no authorization to import any of the four registered external datasets.
 
-## Local readers
+## Exact CLI examples
 
-`iraqi_nlp.external_data.adapters.read_local_file(path)` reads CSV, JSON arrays/objects (`records`, `data`, or `samples` arrays), JSONL, and Parquet if a compatible optional engine (`pyarrow` or `fastparquet`) is installed. CSV/JSON/JSONL use the Python standard library. Original fields are returned as dictionaries.
+List registered sources without reading data:
 
-## Pinned remote file adapters
+```bash
+python -m iraqi_nlp.external_data
+```
 
-- `HuggingFaceAdapter(dataset_id="owner/name")` fetches explicitly listed files via Hub resolve URLs. Requires a 7–64 character hexadecimal commit SHA.
-- `GitHubAdapter(owner="owner", repo="name")` fetches explicitly listed files via `raw.githubusercontent.com` at a 7–64 character commit SHA.
-- Branch aliases (`main`, `master`, `latest`, `HEAD`) and unsafe paths are rejected. Adapters do not enumerate repositories; callers must provide file paths and pinned revisions.
-- `RetryPolicy` bounds attempts (max 5), request timeout (max 120 seconds), backoff, and per-file maximum bytes (default 50 MiB).
-- An optional cache stores complete file responses keyed by immutable URL for rerun/resume at file granularity. It is not a partial HTTP range/resume downloader.
+Profile a locally supplied JSONL fixture using a registered source's metadata; this does not contact the source URL:
 
-No tokens are needed for public files. Private authenticated repositories are not supported in this stage. No upload or publish adapter exists.
+```bash
+python -m iraqi_nlp.external_data \
+  --source ameer4wisam/iraqi_words_finetuning \
+  --input /tmp/local-fixture.jsonl \
+  --revision abcdef123456 \
+  --chunk-size 500 \
+  --checkpoint /tmp/ianlp-import-progress.json \
+  --report-prefix /tmp/ianlp-profile
+```
 
-## Mapping and safety policy
+Resume from a matching checkpoint after interruption:
 
-`map_to_staging_record()` preserves source data in `original_fields`, maps recognized text without normalization, retains original labels, and records the explicit file, revision, and record reference. Missing text is preserved as an empty string and reported; it is not fabricated. Email- and phone-like patterns trigger `privacy.status=needs_review`; this is a conservative signal, not a complete PII detector.
+```bash
+python -m iraqi_nlp.external_data \
+  --source ameer4wisam/iraqi_words_finetuning \
+  --input /tmp/local-fixture.jsonl \
+  --revision abcdef123456 \
+  --chunk-size 500 \
+  --checkpoint /tmp/ianlp-import-progress.json \
+  --resume \
+  --report-prefix /tmp/ianlp-profile-resumed
+```
 
-All mapped records default to `disposition=quarantine`. Dataset-level licenses are not treated as record-level clearance. A reported CC0 source does not automatically clear rights in underlying third-party social content. A non-commercial flag segregates records as `restricted`; unknown or unreviewed rights remain quarantined. No record is accepted by automated heuristics. Acceptance requires a separate reviewer decision with explicit redistribution and privacy clearance.
+Reports are created exclusively; existing JSON or Markdown report paths cause a refusal. Checkpoints contain only source fingerprint, dataset identifier, processing configuration, and completed record count. They do not contain raw text. Do not use a checkpoint path that aliases an input file. A file SHA-256 and configuration must match to resume.
 
-`detect_duplicates()` reports exact text hashes and whitespace/case-folded duplicate groups with all record IDs; it never removes records. It does not claim semantic or fuzzy/near-duplicate detection.
+## Streaming and dataset profiles
 
-`process_records()` operates only on provided in-memory/local or mocked rows; it makes no network requests and writes no data files. The Stage 1 CLI continues to refuse downloads while the registry says downloads are disabled. The four registry entries still have unpinned revisions, so they cannot be fetched until a human verifies metadata and pins immutable commits. Real imports remain unauthorized and must not be run without separate approval.
+CSV and JSONL are read row-wise; optional Parquet uses `pyarrow` batch iteration. JSON arrays are parsed by the standard library and therefore are **not bounded-memory streaming**. Duplicate profiling retains text fingerprints and counters, not source text; this still grows with the number of unique texts. Profile fields include total/valid/malformed rows, missing values, vocabulary size, exact/normalized duplicate rates, word-length buckets, sentiment/intent distributions, source-provided dialect metadata availability, and a script-presence code-switch heuristic.
+
+Profile values are measurements from supplied input. Missing sentiment/intent metadata is labeled `unavailable_metadata_not_present`. Dialect/region statistics count only supplied fields; the profiler never infers a speaker's identity, region, or dialect. Code-switch statistics are heuristic script detection, not validated language ID.
+
+Reports include the requested revision, input URL/type/file hash, license status, and processing configuration. In dry-run, records are never accepted; mapped records remain quarantined. No staging record file is emitted by this CLI.
 
 ## Tests
 
-Run local/mock tests:
+Run local fixtures and mocked sources only:
 
 ```bash
-pytest -v tests/test_external_data_stage1.py tests/test_external_data_adapters.py
+pytest -v tests/test_external_data_stage1.py tests/test_external_data_adapters.py tests/test_external_data_stage3.py
 ```
 
-Tests do not access the network. Parquet behavior is optional; the test confirms a clear missing-engine/invalid-file error path when Parquet cannot be read.
+No real external dataset download or Hugging Face upload is part of Stage 3. Remote adapters remain available as library building blocks but the CLI refuses `--download` pending separate explicit authorization and pinned source metadata.
