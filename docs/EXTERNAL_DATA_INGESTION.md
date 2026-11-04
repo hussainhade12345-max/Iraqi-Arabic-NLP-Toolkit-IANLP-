@@ -1,56 +1,25 @@
-# External data ingestion (Stage 3 integration and profiling)
+# External data ingestion (Stage 5 safety fixes)
 
-Stage 3 connects local readers, the registry, canonical staging mapping, quarantine policy, and reports. The CLI remains **dry-run only**. It accepts a local fixture file for profiling and makes no network requests. There is still no authorization to import any of the four registered external datasets.
+Stage 5 adds permission-specific rights checks, aggregate-state checkpoints, and one-pass duplicate detection. This remains a **readiness/testing stage**. It does not authorize or perform any real external dataset access.
 
-## Exact CLI examples
+## Rights model
 
-List registered sources without reading data:
+Staging records distinguish permission to retain, process, train on, and redistribute. `commercial_use_allowed` is separately recorded. Each permission is `true`, `false`, or unknown (`null`). Explicit `false` always results in `restricted`; unknown stays quarantined. Review can supply missing explicit evidence but cannot override a source/license prohibition. Dataset-level licenses do not establish permission for every underlying record. Acceptance requires all non-commercial-use permissions explicit and true, a cleared license status, and cleared privacy status. A false commercial-use flag prevents automatic acceptance into a general-purpose output; non-commercial-only material must remain segregated for a separate, properly scoped workflow.
 
-```bash
-python -m iraqi_nlp.external_data
-```
+## Checkpoints and profiles
 
-Profile a locally supplied JSONL fixture using a registered source's metadata; this does not contact the source URL:
+A resume validates the input SHA-256, dataset ID, and processing configuration. It restores accumulated counters, hashes, and vocabulary state so final profiling represents the full input, not just remaining rows. Checkpoints may contain vocabulary and metadata values; protect them as sensitive artifacts. Checkpoint paths resolving to the input file are rejected. The checkpoint format is internal and versioned indirectly by the processing configuration; do not hand-edit it.
 
-```bash
-python -m iraqi_nlp.external_data \
-  --source ameer4wisam/iraqi_words_finetuning \
-  --input /tmp/local-fixture.jsonl \
-  --revision abcdef123456 \
-  --chunk-size 500 \
-  --checkpoint /tmp/ianlp-import-progress.json \
-  --report-prefix /tmp/ianlp-profile
-```
+Profiling distinguishes `nonempty_text_records` from `canonical_schema_valid_records`. Vocabulary is explicitly `unique_whitespace_token_count_casefolded`; it is not a linguistic tokenizer output. Dialect/region output provides distributions only for source-present values. Code-switch statistics remain a simple Unicode script-presence heuristic and are not validated language labels.
 
-Resume from a matching checkpoint after interruption:
+## Remote streaming scope
+
+An opt-in library method streams pinned remote CSV and JSONL rows with a byte cap and bounded open retries. JSON remains bounded-buffered because the standard library parser is not incremental. Parquet streaming is available only for local files with optional `pyarrow`. The CLI does not call remote adapters and continues to reject `--download`.
+
+## Local regression checks
 
 ```bash
-python -m iraqi_nlp.external_data \
-  --source ameer4wisam/iraqi_words_finetuning \
-  --input /tmp/local-fixture.jsonl \
-  --revision abcdef123456 \
-  --chunk-size 500 \
-  --checkpoint /tmp/ianlp-import-progress.json \
-  --resume \
-  --report-prefix /tmp/ianlp-profile-resumed
+pytest -v tests/test_external_data_stage1.py tests/test_external_data_adapters.py tests/test_external_data_stage3.py tests/test_external_data_stage5.py
 ```
 
-Reports are created exclusively; existing JSON or Markdown report paths cause a refusal. Checkpoints contain only source fingerprint, dataset identifier, processing configuration, and completed record count. They do not contain raw text. Do not use a checkpoint path that aliases an input file. A file SHA-256 and configuration must match to resume.
-
-## Streaming and dataset profiles
-
-CSV and JSONL are read row-wise; optional Parquet uses `pyarrow` batch iteration. JSON arrays are parsed by the standard library and therefore are **not bounded-memory streaming**. Duplicate profiling retains text fingerprints and counters, not source text; this still grows with the number of unique texts. Profile fields include total/valid/malformed rows, missing values, vocabulary size, exact/normalized duplicate rates, word-length buckets, sentiment/intent distributions, source-provided dialect metadata availability, and a script-presence code-switch heuristic.
-
-Profile values are measurements from supplied input. Missing sentiment/intent metadata is labeled `unavailable_metadata_not_present`. Dialect/region statistics count only supplied fields; the profiler never infers a speaker's identity, region, or dialect. Code-switch statistics are heuristic script detection, not validated language ID.
-
-Reports include the requested revision, input URL/type/file hash, license status, and processing configuration. In dry-run, records are never accepted; mapped records remain quarantined. No staging record file is emitted by this CLI.
-
-## Tests
-
-Run local fixtures and mocked sources only:
-
-```bash
-pytest -v tests/test_external_data_stage1.py tests/test_external_data_adapters.py tests/test_external_data_stage3.py
-```
-
-No real external dataset download or Hugging Face upload is part of Stage 3. Remote adapters remain available as library building blocks but the CLI refuses `--download` pending separate explicit authorization and pinned source metadata.
+Stage 5 tests use local fixtures or mocks only. No real external dataset was downloaded and no Hugging Face write operation exists in this pipeline.
