@@ -1,48 +1,37 @@
-# External data ingestion (Stage 1)
+# External data ingestion (Stage 2 adapters)
 
-This document describes the safe foundation for importing third-party datasets. The current implementation is a **registry, schema, report writer, and dry-run CLI only**. It does not retrieve records, modify `corpus/` or `lexicon/`, or publish to Hugging Face.
+Stage 2 adds local CSV, JSON, JSONL readers, pinned-file Hugging Face and GitHub adapters, optional Parquet parsing, record mapping/policy checks, duplicate reporting, and bounded network acquisition. These modules are tested with local fixtures and injected mock fetchers. **No registered real dataset was downloaded or imported as part of this implementation.**
 
-## Safety defaults
+## Local readers
 
-- Dry-run is the default. `python -m iraqi_nlp.external_data --source OWNER/DATASET --report-prefix staging/external_import_reports/NAME` validates the registered source and writes a JSON and Markdown planning report.
-- The CLI makes no network requests. `--download` is deliberately refused in Stage 1, even if `--approve-downloads` is also supplied. A later adapter implementation must have explicit approval gates.
-- Reports are created with exclusive file creation. If either report already exists, the command refuses to overwrite it.
-- Existing corpus, lexicon, and sample dataset files are not import destinations. Imported records must later be isolated in a dedicated staging/quarantine area.
-- No records are considered accepted by the current CLI. Unknown or unresolved record rights/privacy are quarantined by schema policy.
+`iraqi_nlp.external_data.adapters.read_local_file(path)` reads CSV, JSON arrays/objects (`records`, `data`, or `samples` arrays), JSONL, and Parquet if a compatible optional engine (`pyarrow` or `fastparquet`) is installed. CSV/JSON/JSONL use the Python standard library. Original fields are returned as dictionaries.
 
-## Source registry
+## Pinned remote file adapters
 
-The versioned registry is `iraqi_nlp/external_data/source_registry.v1.json`. It records the four approved dataset IDs, source URLs/types, preliminary format/license findings, revision pin state, import state, and default disposition. Preliminary facts from the audit are marked as reported and require direct verification at a pinned revision before use. `not_imported` and a null last-import date are intentional.
+- `HuggingFaceAdapter(dataset_id="owner/name")` fetches explicitly listed files via Hub resolve URLs. Requires a 7–64 character hexadecimal commit SHA.
+- `GitHubAdapter(owner="owner", repo="name")` fetches explicitly listed files via `raw.githubusercontent.com` at a 7–64 character commit SHA.
+- Branch aliases (`main`, `master`, `latest`, `HEAD`) and unsafe paths are rejected. Adapters do not enumerate repositories; callers must provide file paths and pinned revisions.
+- `RetryPolicy` bounds attempts (max 5), request timeout (max 120 seconds), backoff, and per-file maximum bytes (default 50 MiB).
+- An optional cache stores complete file responses keyed by immutable URL for rerun/resume at file granularity. It is not a partial HTTP range/resume downloader.
 
-Registry license status is not a legal determination. In particular:
+No tokens are needed for public files. Private authenticated repositories are not supported in this stage. No upload or publish adapter exists.
 
-- The reported `CC-BY-NC-4.0` for `factlogic/iraqi-arabic-dialect-corpus-v2` requires non-commercial separation; record-level license and platform terms must be inspected individually.
-- The reported `CC0-1.0` for `ebady/Iraqi-Arabic-Dialect-Dataset` does not automatically clear rights in underlying third-party social-media or other content. Provenance/privacy review remains required.
-- License details for `ameer4wisam/iraqi_words_finetuning` and `ArSyra/arsyra-iraqi` were unknown in the initial audit. They remain quarantined pending verification.
-- A record-level license field being present does not itself authorize redistribution.
+## Mapping and safety policy
 
-Do not treat these preliminary registry values as verified current metadata; refresh and pin source revisions before any actual download.
+`map_to_staging_record()` preserves source data in `original_fields`, maps recognized text without normalization, retains original labels, and records the explicit file, revision, and record reference. Missing text is preserved as an empty string and reported; it is not fabricated. Email- and phone-like patterns trigger `privacy.status=needs_review`; this is a conservative signal, not a complete PII detector.
 
-## Canonical staging record
+All mapped records default to `disposition=quarantine`. Dataset-level licenses are not treated as record-level clearance. A reported CC0 source does not automatically clear rights in underlying third-party social content. A non-commercial flag segregates records as `restricted`; unknown or unreviewed rights remain quarantined. No record is accepted by automated heuristics. Acceptance requires a separate reviewer decision with explicit redistribution and privacy clearance.
 
-`iraqi_nlp.external_data.schema.STAGING_RECORD_SCHEMA` defines a versioned, dependency-free contract. Records preserve raw text exactly, original fields, source record IDs, revisions/files, original labels, and licensing/privacy evidence. Normalized text, if added by a later processing phase, must be separate. Unknown permissions are represented as `null`/unknown and must not be accepted. Accepted records require explicit redistribution clearance and privacy clearance.
+`detect_duplicates()` reports exact text hashes and whitespace/case-folded duplicate groups with all record IDs; it never removes records. It does not claim semantic or fuzzy/near-duplicate detection.
 
-## Reports and CLI
+`process_records()` operates only on provided in-memory/local or mocked rows; it makes no network requests and writes no data files. The Stage 1 CLI continues to refuse downloads while the registry says downloads are disabled. The four registry entries still have unpinned revisions, so they cannot be fetched until a human verifies metadata and pins immutable commits. Real imports remain unauthorized and must not be run without separate approval.
 
-Example dry run:
+## Tests
+
+Run local/mock tests:
 
 ```bash
-python -m iraqi_nlp.external_data \
-  --source factlogic/iraqi-arabic-dialect-corpus-v2 \
-  --report-prefix staging/external_import_reports/factlogic-plan
+pytest -v tests/test_external_data_stage1.py tests/test_external_data_adapters.py
 ```
 
-This writes `factlogic-plan.json` and `factlogic-plan.md`. It reports zero discovered, downloaded, and accepted records because no adapter/network operation exists yet. The default report prefix is `staging/external_import_reports/import-report`; specify one source to avoid collisions between separate reports.
-
-## Implemented versus planned
-
-**Implemented:** versioned registry validation, staging-record validation, dry-run planning, JSON/Markdown report generation, and overwrite collision protection.
-
-**Not implemented yet:** Hugging Face/GitHub readers, CSV/JSON/JSONL/Parquet adapters, retries/pagination/resume, license/privacy record assessment, duplicate scans, staging data writes, scheduled/manual Actions workflow, and any upload/publishing support. No successful imports are claimed.
-
-Run the local tests with `pytest -v tests/test_external_data_stage1.py`. These tests use no external datasets or network calls.
+Tests do not access the network. Parquet behavior is optional; the test confirms a clear missing-engine/invalid-file error path when Parquet cannot be read.
