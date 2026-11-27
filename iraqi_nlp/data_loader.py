@@ -1,3 +1,4 @@
+
 """
 Data loading, splitting, and baseline evaluation utilities for IANLP.
 تحميل البيانات وتقسيمها ونماذج التقييم الأساسية
@@ -93,8 +94,11 @@ def split_dataset(
 
     # Deduplicate by normalized text to prevent data leakage
     if deduplicate_by_text and text_col in work_df.columns:
-        norm_key = work_df[text_col].dropna().astype(str).apply(normalize_iraqi_text)
-        work_df = work_df.loc[~norm_key.duplicated()].copy()
+        norm_key = work_df[text_col].map(
+            lambda text: normalize_iraqi_text(str(text)) if pd.notna(text) else None
+        )
+        duplicate_text = norm_key.notna() & norm_key.duplicated()
+        work_df = work_df.iloc[~duplicate_text.to_numpy()].copy()
 
     # Reproducible shuffle
     shuffled_df = work_df.sample(frac=1.0, random_state=random_state).reset_index(drop=True)
